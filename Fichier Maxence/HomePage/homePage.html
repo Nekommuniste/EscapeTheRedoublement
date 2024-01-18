@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>ESCAPE THE REDOUBLEMENT</title>
+    <link rel="stylesheet" type="text/css" href="style_accueil.css" />
+</head>
+
+<body>
+	<h1 ><img src="logo.png" class="resize"/></h1>
+	<div class="container">
+		<div>
+			<h2 id="aa">Bienvenue</h2>
+			<label for="joueur">Entrez votre prenom :</label>
+			<br>
+			<br>
+			<input type="text" id="nomJoueur" class="boite" name="joueur" value=""></input>
+			<br><br>
+			<button onclick="lancerJeu()">Commencer</button>
+			<button onclick="supprimerLocalStorage()">Changer les informations</button>
+			<br><br>
+			<img src="prof.png" class="prof"/>
+			
+		</div>
+		
+	</div>
+	<br><br><br><br><br><br><br><br><br><br><br>
+	<img src="logo_uphf.png" class="uphf"/>
+	<script src="homePage.js"></script>
+
+	<script>
+		// Utilise la fonction update quand la page est chargéé :
+		window.addEventListener("DOMContentLoaded", update());
+	</script>
+</body>
+	
+</html>
+
+<!-- 
+	Ajouter de nouveaux inputx pour le prenom (id : prenomJoueur) et l'age (id : ageJoueur)
+	Refaire la mise en forme de la page car problème de dimension par rapport à l'écran de l'utilisateur
+-->
