@@ -1,3 +1,5 @@
+// Cree par EUSOP Maxence 17/01/2024
+
 function reponseChecked(radioName){
     var recuperationReponse = document.getElementsByName(radioName);
     for(var i = 0; i < recuperationReponse.length; i++){
