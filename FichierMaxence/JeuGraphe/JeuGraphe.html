@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Cours de Graphes</title>
+        <link rel="stylesheet" href="JeuGraphe.css">
+    </head>
+    <body>
+        <img src="../BoiteDeDialogue/Projet/epreuve1.jpg" alt="Salle de cours">
+        <div class="boxOverall">
+            <div class="boxTitle">
+                <h1>Bienvenue à l'épreuve de Graphe</h1>
+            </div>
+            <div class="boxAllQuestions">
+                <div class="boxQuestion" id="boxQuestion1">
+                    <label for="Question">Qu'est-ce qu'un noeud (ou sommet) dans un graphe ?</label><br><br>
+                    <input type="radio" id="r11" name="Reponse1" value="false">
+                    <label for="bleu/jaune">Une arête reliant deux sommets</label><br>
+                    <input type="radio" id="r12" name="Reponse1" value="false">
+                    <label for="vert/rouge">Un chemin entre deux sommets</label><br>
+                    <input type="radio" id="r13" name="Reponse1" value="true">
+                    <label for="violet/rose">Un point de connexion dans le graphe</label><br>
+                    <input type="radio" id="r14" name="Reponse1" value="false">
+                    <label for="marron/gris">Une composante connexe</label><br>
+                </div>
+                <div class="boxQuestion" id="boxQuestion2">
+                    <label for="Question">Quelle est la définition correcte d'un graphe orienté ?</label><br><br>
+                    <input type="radio" id="r21" name="Reponse2" value="false">
+                    <label for="bleu/jaune">Un graphe avec des sommets de différentes couleurs</label><br>
+                    <input type="radio" id="r22" name="Reponse2" value="true">
+                    <label for="vert/rouge">Un graphe dans lequel chaque arête a une direction</label><br>
+                    <input type="radio" id="r23" name="Reponse2" value="false">
+                    <label for="violet/rose">Un graphe sans cycles</label><br>
+                    <input type="radio" id="r24" name="Reponse2" value="false">
+                    <label for="marron/gris">Un graphe avec un seul sommet</label><br>
+                </div>
+                <div class="boxQuestion" id="boxQuestion3">
+                    <label for="Question">Qu'est-ce qu'un cycle dans un graphe non orienté ?</label><br><br>
+                    <input type="radio" id="r31" name="Reponse3" value="false">
+                    <label for="bleu/jaune">Une séquence d'arêtes reliant deux sommets</label><br>
+                    <input type="radio" id="r32" name="Reponse3" value="false">
+                    <label for="vert/rouge">Un chemin qui visite chaque sommet exactement une fois</label><br>
+                    <input type="radio" id="r33" name="Reponse3" value="true">
+                    <label for="violet/rose">Un ensemble de sommets reliés par des arêtes formant une boucle</label><br>
+                    <input type="radio" id="r34" name="Reponse3" value="false">
+                    <label for="marron/gris">Un sous-graphe complet</label><br>
+                </div>
+                <div class="boxQuestion" id="boxQuestion4">
+                    <label for="Question">Quelle est la meilleure représentation pour un graphe pondéré ?</label><br><br>
+                    <input type="radio" id="r41" name="Reponse4" value="false">
+                    <label for="bleu/jaune">Liste d'adjacence</label><br>
+                    <input type="radio" id="r42" name="Reponse4" value="true">
+                    <label for="vert/rouge">Matrice d'adjacence</label><br>
+                    <input type="radio" id="r43" name="Reponse4" value="false">
+                    <label for="violet/rose">Liste d'arêtes</label><br>
+                    <input type="radio" id="r44" name="Reponse4" value="false">
+                    <label for="marron/gris">Matrice de poids</label><br>
+                </div>
+                <button type="button" onclick="verificationReponse()">Terminé</button>
+            </div>
+        </div>
+        <script src="JeuGraphe.js"></script>
+    </body>
+</html>
