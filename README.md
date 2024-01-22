@@ -1,9 +1,5 @@
-# EscapeTheRedoublement
-Projet de L3 Informatique
+Les fichiers présents dans ce dossier sont soit faits ou modifiés par moi.
+En cas de problème de code ou de compréhension de celui-ci, veuillez prendre RDV avec ma secretaire Sarah Fauçonnier.
 
-Le but de ce projet est de créer un jeu vidéo du style point&click, codé avec HTML/CSS/JS.
-
-Synopsis :
-Vous êtes un étudiant en L3 Informatique qui se rend à l'UPHF pour récupérer son diplôme OR patatra, vous vous retrouvez à repasser 5 épreuves, parmi lesquelles figure Base de Données et Java.
-
-*A COMPLETER*
+Cordialement EUSOP Maxence,
+le meilleur de la team :)

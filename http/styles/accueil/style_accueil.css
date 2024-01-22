@@ -1,0 +1,68 @@
+body {
+	background-image: url("../../img/interface/test.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	align-items: center;
+	padding: 0;
+	margin: 0;
+	overflow: hidden;
+}
+
+h1 {
+	text-align: center;
+	size: 50%;
+}
+
+.container {
+	display: block;
+	background-color: white;
+	height: 300px;
+	width: 500px;
+	top: 50vh;
+	margin-left: 50vw;
+	transform: translate(-50%, -50%);
+	border-radius: 15px;
+	padding: 10px;
+}
+
+
+
+button {
+	text-align: center;
+	border-radius: 5px;
+	background-color: #e0e0e0;
+	color: black;
+	border: none;
+	width: 150px;
+	height: auto;
+	text-align: center;
+	font-size: auto;
+}
+
+.prof {
+	padding-right: 85%;
+	padding-top: -25%;
+	height: 150px;
+	width: auto;
+
+}
+
+.uphf {
+	display: block;
+	height: 150px;
+	position: absolute;
+	top: 100vh;
+	transform: translateY(-100%);
+}
+
+.resize {
+	height: 365px;
+	width: auto;
+}
+
+.boite {
+	border-radius: 5px;
+	color: black;
+	border: 2px solid black;
+}

@@ -3,52 +3,52 @@
 // -----------------------------------------------------------------------------
 
 // Fonction qui enregistre le nom du joueur :
-function setNomJoueur(nomJoueur){
+function setNomJoueur(nomJoueur) {
     localStorage.setItem("nomJoueur", nomJoueur);
     return;
 }
 
 // Fonction qui donne le nom du joueur :
-function getNomJoueur(){
+function getNomJoueur() {
     return localStorage.getItem("nomJoueur");
 }
 
 // -----------------------------------------------------------------------------
 
 // Fonction qui enregistre le prenom du joueur :
-function setPrenomJoueur(prenomJoueur){
+function setPrenomJoueur(prenomJoueur) {
     localStorage.setItem("prenomJoueur", prenomJoueur);
     return;
 }
 
 // Fonction qui donne le prenom du joueur :
-function getPrenomJoueur(){
+function getPrenomJoueur() {
     return localStorage.getItem("prenomJoueur");
 }
 
 // -----------------------------------------------------------------------------
 
 // Fonction qui enregistre l'age du joueur :
-function setAgeJoueur(ageJoueur){
+function setAgeJoueur(ageJoueur) {
     localStorage.setItem("ageJoueur", ageJoueur);
     return;
 }
 
 // Fonction qui donne l'age du joueur :
-function getAgeJoueur(){
+function getAgeJoueur() {
     return localStorage.getItem("ageJoueur");
 }
 
 // -----------------------------------------------------------------------------
 
 // Fonction qui verifie l'entree des donnees dans les inputs :
-function verifieValeurInput(idInput){
+function verifieValeurInput(idInput) {
     var inputVerif = document.getElementById(idInput).value;
-    if(inputVerif.trim() != ""){
+    if (inputVerif.trim() != "") {
         console.log("La valeur de l'input (" + idInput + ") est bonne.");
         return true;
     }
-    else{
+    else {
         alert("Veuillez saisir quelque chose de valide.");
         return false;
     }
@@ -57,15 +57,15 @@ function verifieValeurInput(idInput){
 // -----------------------------------------------------------------------------
 
 // Fonction qui lance le jeu :
-function lancerJeu(){
+function lancerJeu() {
     var nom = document.getElementById("nomJoueur").value;
     //var prenom = document.getElementById("prenomJoueur").value;
     //var age = document.getElementById("ageJoueur").value;
-    if(verifieValeurInput("nomJoueur") == true /*&& document.getElementById("ageJoueur") == true && document.getElementById("prenomJoueur") == true*/){
+    if (verifieValeurInput("nomJoueur") == true /*&& document.getElementById("ageJoueur") == true && document.getElementById("prenomJoueur") == true*/) {
         setNomJoueur(nom);
-        window.location.href = "../game/index.html";
+        window.location.href = "pages/jeu.html";
     }
-    else{
+    else {
         return;
     }
 }
@@ -73,8 +73,8 @@ function lancerJeu(){
 // -----------------------------------------------------------------------------
 
 // Fonction qui charge les donnees deja existantes :
-function update(){
-    if(localStorage.getItem("nomJoueur")){
+function update() {
+    if (localStorage.getItem("nomJoueur")) {
         document.getElementById("nomJoueur").value = localStorage.getItem("nomJoueur");
         document.getElementById("nomJoueur").disabled = true;
     }
@@ -92,7 +92,7 @@ function update(){
 // -----------------------------------------------------------------------------
 
 // Fonction qui supprime toutes les donnees :
-function supprimerLocalStorage(){
+function supprimerLocalStorage() {
     localStorage.removeItem("nomJoueur");
     localStorage.removeItem("prenomJoueur");
     localStorage.removeItem("ageJoueur");
