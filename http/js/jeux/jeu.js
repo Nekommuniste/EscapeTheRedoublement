@@ -25,7 +25,7 @@ function updateEpreuveMenu(){
     for(let i = 0; i < tableauIdEpreuve.length; i++){
         var mot = document.getElementById(tableauIdEpreuve[i]);
         if(localStorage.getItem(tableauIdEpreuve[i]) == "true"){
-            mot.textContent = "Réussie";
+            mot.textContent = "Validé";
             mot.className ="green-text";
         }
         else{
