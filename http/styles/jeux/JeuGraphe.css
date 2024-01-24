@@ -1,13 +1,14 @@
 /* Cree par EUSOP Maxence 17/01/2024 */
 
-html, body{
+html,
+body {
     font-family: Arial;
     margin: 0;
     padding: 0;
     color: white;
 }
 
-img{
+img {
     margin: 0;
     padding: 0;
     display: block;
@@ -19,7 +20,7 @@ img{
     filter: blur(2px);
 }
 
-.boxOverall{
+.boxOverall {
     display: block;
     position: absolute;
     top: 50vh;
@@ -34,7 +35,7 @@ img{
     box-shadow: 0 0 15px grey;
 }
 
-.boxTitle{
+.boxTitle {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -43,13 +44,13 @@ img{
     margin: 0;
     padding: 0;
     width: 100%;
-    height: 20%;
+    height: 15%;
     border-radius: 15px 15px 0 0;
     box-shadow: 0 1px 5px black;
     user-select: none;
 }
 
-.boxAllQuestions{
+.boxAllQuestions {
     width: 100%;
     height: 80%;
     border-radius: 0 0 15px 15px;
@@ -57,7 +58,7 @@ img{
     padding-right: 20px;
 }
 
-.boxQuestion{
+.boxQuestion {
     background-color: #6C7984;
     display: block;
     margin: 20px;
@@ -67,18 +68,18 @@ img{
     box-shadow: 0 0 10px #4984b8;
 }
 
-::-webkit-scrollbar{
+::-webkit-scrollbar {
     background-color: #6C7984;
     width: 4px;
     border-radius: 15px;
 }
 
-::-webkit-scrollbar-thumb{
+::-webkit-scrollbar-thumb {
     background-color: #4984b8;
     border-radius: 15px;
 }
 
-button{
+button {
     background-color: #4984b8;
     color: white;
     height: 40px;
@@ -90,7 +91,7 @@ button{
     user-select: none;
 }
 
-button:hover{
+button:hover {
     background-color: #2b4f6e;
     cursor: pointer;
 }
