@@ -144,9 +144,9 @@ area:hover {
 }
 
 .center img {
-	width: 100%;
+	width: 90%;
 	height: auto;
-	max-height: 100%;
+	max-height: 90%;
 	border-bottom-right-radius: 10px;
 	border-bottom-left-radius: 10px;
 	box-shadow: 0px 0px 10px grey;
