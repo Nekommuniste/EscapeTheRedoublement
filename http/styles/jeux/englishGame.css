@@ -23,6 +23,20 @@ img {
 
 textarea {
     resize: none;
+    border-radius: 7px;
+    border: 2px solid #4984b8;
+}
+
+table {
+    margin-left: 2vw;
+}
+
+td {
+    border-radius: 7px;
+    background-color: white;
+    color: grey;
+    padding: 5px;
+    border: 2px solid #4984b8;
 }
 
 .q-box {
