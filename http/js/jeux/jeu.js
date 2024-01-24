@@ -8,9 +8,14 @@ var tableauIdEpreuve = ["jeuGraphe", "jeuAnglais", "jeuC", "jeuJava", "jeuWeb"];
 
 // Fonction qui met à jour les informations du joueur :
 function updateInformationPlayer(){
-    //document.getElementById("pPrenom").innerHTML = "<b>Prénom : </b>" + getPrenomJoueur();
-    document.getElementById("pNom").innerHTML = "<b>Nom : </b>" + getNomJoueur();
-    //document.getElementById("pAge").innerHTML = "<b>Age : </b>" + getAgeJoueur() + " ans";
+    if(localStorage.getItem("nomJoueur") == null /*|| localStorage.getItem("prenomJoueur") == null || localStorage.getItem("ageJoueur") == null */){
+        window.location.href = "..\\index.html";
+    }
+    else{
+        //document.getElementById("pPrenom").innerHTML = "<b>Prénom : </b>" + getPrenomJoueur();
+        document.getElementById("pNom").innerHTML = "<b>Nom : </b>" + getNomJoueur();
+        //document.getElementById("pAge").innerHTML = "<b>Age : </b>" + getAgeJoueur() + " ans";
+    }
 }
 
 // -----------------------------------------------------------------------------
