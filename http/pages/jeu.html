@@ -105,7 +105,7 @@
 		</div>
 		<div class="center">
 			<!-- Div du milieu -->
-			<img id="image" src="../img/scenes/test.jpg" alt="Workplace" usemap="#workmap">
+			<img id="image" src="../img/scenes/EntreeDuBatiment.jpeg" alt="Workplace" usemap="#workmap">
 
 			<map name="workmap">
 				<area shape="rect" coords="80,470,395,370" alt="Computer" onclick="replaceImage('deux')" />
@@ -219,12 +219,12 @@
 							<tr id="java-test">
 								<td>
 									<div class="left centered">
-										<h5>Javaaz</h5>
+										<h5>Java</h5>
 									</div>
 								</td>
 								<td>
 									<div class="center centered">
-										<h5 class="green-text">Réussi</h5>
+										<h5 id="jeuJava" class="green-text">Réussi</h5>
 									</div>
 								</td>
 								<td>
@@ -243,7 +243,7 @@
 								</td>
 								<td>
 									<div class="center centered">
-										<h5 class="red-text">A faire</h5>
+										<h5 id="jeuWeb" class="red-text">A faire</h5>
 									</div>
 								</td>
 								<td>
@@ -262,7 +262,7 @@
 								</td>
 								<td>
 									<div class="center centered">
-										<h5 class="red-text">Echec</h5>
+										<h5 id="jeuAnglais" class="red-text">Echec</h5>
 									</div>
 								</td>
 								<td>
@@ -281,7 +281,7 @@
 								</td>
 								<td>
 									<div class="center centered">
-										<h5 class="green-text">Réussi</h5>
+										<h5 id="jeuGraphe" class="green-text">Réussi</h5>
 									</div>
 								</td>
 								<td>
@@ -300,51 +300,13 @@
 								</td>
 								<td>
 									<div class="center centered">
-										<h5 class="red-text">Echec</h5>
-									</div>
-								</td>
-								<td>
-									<div class="right centered">
-										<button id="c-button">
-											Réessayer
-										</button>
-									</div>
-								</td>
-							</tr>
-							<tr id="c-test">
-								<td>
-									<div class="left centered">
-										<h5>Langage C</h5>
-									</div>
-								</td>
-								<td>
-									<div class="center centered">
-										<h5 class="red-text">Echec</h5>
+										<h5 id="jeuC" class="red-text">Echec</h5>
 									</div>
 								</td>
 								<td>
 									<div class="right centered">
 										<button>
 											Réessayer
-										</button>
-									</div>
-								</td>
-							</tr>
-							<tr id="c-test">
-								<td>
-									<div class="left centered">
-										<h5>Langage C</h5>
-									</div>
-								</td>
-								<td>
-									<div class="center centered">
-										<h5 class="red-text">Echec</h5>
-									</div>
-								</td>
-								<td>
-									<div class="right centered">
-										<button>
-											RéessayerN
 										</button>
 									</div>
 								</td>
@@ -365,11 +327,13 @@
 	<script src="../js/scene-swap.js"></script>
 	<script src="../js/interface.js"></script>
 	<script src="../js/accueil/informationPlayer.js"></script>
-	<script src="../js/accueil/jeu.js"></script>
+	<script src="../js/jeux/jeu.js"></script>
 	<script src="../js/dialogBox.js"></script>
 
 	<script>
+		// Les deux lignes permettent de mettre à jour les menus (information du joueur/avancement des épreuves) :
 		window.addEventListener("DOMContentLoaded", updateInformationPlayer());
+		window.addEventListener("DOMContentLoaded", updateEpreuveMenu());
 	</script>
 </body>
 

@@ -1,13 +1,13 @@
 function replaceImage(target) {
     // Remplace l'image et la map en fonction de la cible
     if (target === 'un') {
-        document.getElementById('image').src = "../img/scenes/test.jpg";
+        document.getElementById('image').src = "../img/scenes/EntreeDuBatiment.jpeg";
         document.getElementById('image').useMap = "#workmap";
     } else if (target === 'deux') {
-        document.getElementById('image').src = "../img/scenes/Entree du bat.png";
+        document.getElementById('image').src = "../img/scenes/EntreeDuBatiment.jpeg";
         document.getElementById('image').useMap = "#entreeDuBatMap";
     } else if (target === 'trois') {
-        document.getElementById('image').src = "../img/scenes/choixescaliercouloir.jpg";
+        document.getElementById('image').src = "../img/scenes/CouloirVuBas.jpeg";
         document.getElementById('image').useMap = "#choixMap";
     } else if (target == 'quatre') {
         document.getElementById('image').src = "../img/scenes/couloir.jpg";

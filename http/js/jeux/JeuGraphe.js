@@ -1,5 +1,12 @@
 // Cree par EUSOP Maxence 17/01/2024
 
+// -----------------------------------------------------------------------------
+
+var compteur = 0;
+
+// -----------------------------------------------------------------------------
+
+// Fonction qui verifie si une reponse est cochée :
 function reponseChecked(radioName){
     var recuperationReponse = document.getElementsByName(radioName);
     for(var i = 0; i < recuperationReponse.length; i++){
@@ -9,13 +16,17 @@ function reponseChecked(radioName){
     }
 }
 
+// -----------------------------------------------------------------------------
+
+// Fonction qui cache le jeu après la réussite :
 function after(){
     document.querySelector(".boxOverall").style.display = "none";
     document.querySelector("img").style.filter ="none";
 }
 
-var compteur = 0;
+// -----------------------------------------------------------------------------
 
+// Fonction qui ajoute une couleur en fonction de la réponse du joueur, de plus en cas de victoire le jeu s'arrete :
 function verificationReponse(){
     var questions = [reponseChecked("Reponse1"), reponseChecked("Reponse2"), reponseChecked("Reponse3"), reponseChecked("Reponse4")];
     for(var i = 0; i < questions.length; i++){
@@ -52,6 +63,7 @@ function verificationReponse(){
     if(questions[0] == 'true' && questions[1] == 'true' && questions[2] == 'true' && questions[3] == 'true'){
         alert("Bien joué tu as répondu correctement à toutes les questions en " + compteur + " essais !");
         after();
+        localStorage.setItem("jeuGraphe", "true");
     }
     else{
         alert("Recommence");

@@ -2,6 +2,10 @@
 
 // -----------------------------------------------------------------------------
 
+var tableauIdEpreuve = ["jeuGraphe", "jeuAnglais", "jeuC", "jeuJava", "jeuWeb"];
+
+// -----------------------------------------------------------------------------
+
 // Fonction qui met à jour les informations du joueur :
 function updateInformationPlayer(){
     //document.getElementById("pPrenom").innerHTML = "<b>Prénom : </b>" + getPrenomJoueur();
@@ -9,5 +13,19 @@ function updateInformationPlayer(){
     //document.getElementById("pAge").innerHTML = "<b>Age : </b>" + getAgeJoueur() + " ans";
 }
 
+// -----------------------------------------------------------------------------
 
-
+// Fonction qui MAJ le menu des épreuves en cas de réussite :
+function updateEpreuveMenu(){
+    for(let i = 0; i < tableauIdEpreuve.length; i++){
+        var mot = document.getElementById(tableauIdEpreuve[i]);
+        if(localStorage.getItem(tableauIdEpreuve[i]) == "true"){
+            mot.textContent = "Réussie";
+            mot.className ="green-text";
+        }
+        else{
+            mot.textContent = "A faire";
+            mot.className = "red-text";
+        }
+    }
+}
