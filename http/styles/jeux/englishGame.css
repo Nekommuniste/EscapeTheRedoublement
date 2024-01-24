@@ -18,6 +18,16 @@ img {
     left: 50vw;
     transform: translateX(-50%);
     filter: blur(2px);
+    user-select: none;
+}
+
+textarea {
+    resize: none;
+}
+
+.q-box {
+    margin-left: 2vw;
+    margin-top: 2vh;
 }
 
 .boxOverall {
@@ -44,10 +54,14 @@ img {
     margin: 0;
     padding: 0;
     width: 100%;
-    height: 20%;
+    height: 15%;
     border-radius: 15px 15px 0 0;
     box-shadow: 0 1px 5px black;
     user-select: none;
+}
+
+#sub-title {
+    margin: 2%;
 }
 
 .boxAllQuestions {
