@@ -27,7 +27,6 @@ function updateEpreuveMenu(){
         var mot = document.getElementById(tableauIdEpreuve[i]);
         if(localStorage.getItem(tableauIdEpreuve[i]) == "true"){
             compteur++;
-            
             mot.textContent = "Validé";
             mot.className ="green-text";
         }
@@ -37,3 +36,13 @@ function updateEpreuveMenu(){
         }
     }
 }
+
+// -----------------------------------------------------------------------------
+
+// Fonction qui remet le jeu à zéro :
+function restartGame(){
+    localStorage.clear();
+}
+
+// -----------------------------------------------------------------------------
+
