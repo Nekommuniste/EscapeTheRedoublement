@@ -45,11 +45,13 @@ function getAgeJoueur() {
 function verifieValeurInput(idInput) {
     var inputVerif = document.getElementById(idInput).value;
     if (inputVerif.trim() != "") {
-        console.log("La valeur de l'input (" + idInput + ") est bonne.");
+        document.getElementById(idInput).style.background = "white";
         return true;
     }
     else {
         alert("Veuillez saisir quelque chose de valide.");
+        document.getElementById(idInput).style.background = "red";
+        document.getElementById(idInput).style.opacity = "0.50";
         return false;
     }
 }
@@ -59,11 +61,13 @@ function verifieValeurInput(idInput) {
 // Fonction qui lance le jeu :
 function lancerJeu() {
     var nom = document.getElementById("nomJoueur").value;
-    //var prenom = document.getElementById("prenomJoueur").value;
-    //var age = document.getElementById("ageJoueur").value;
-    if (verifieValeurInput("nomJoueur") == true /*&& document.getElementById("ageJoueur") == true && document.getElementById("prenomJoueur") == true*/) {
+    var prenom = document.getElementById("prenomJoueur").value;
+    var age = document.getElementById("ageJoueur").value;
+    if (verifieValeurInput("nomJoueur") == true && verifieValeurInput("prenomJoueur") == true && verifieValeurInput("ageJoueur") == true) {
         setNomJoueur(nom);
-        window.location.href = "pages/jeu.html";
+        setPrenomJoueur(prenom);
+        setAgeJoueur(age);
+        window.location.href = "../pages/jeu.html";
     }
     else {
         return;
@@ -74,18 +78,18 @@ function lancerJeu() {
 
 // Fonction qui charge les donnees deja existantes :
 function update() {
-    if (localStorage.getItem("nomJoueur")) {
+    if(localStorage.getItem("nomJoueur")) {
         document.getElementById("nomJoueur").value = localStorage.getItem("nomJoueur");
         document.getElementById("nomJoueur").disabled = true;
     }
-    //(localStorage.getItem("prenomJoueur")){
-    //    document.getElementById("prenomJoueur").value = localStorage.getItem("prenomJoueur");
-    //    document.getElementById("prenomJoueur").disabled = true;
-    //}
-    //if(localStorage.getItem("ageJoueur")){
-    //    document.getElementById("ageJoueur").value = localStorage.getItem("ageJoueur");
-    //    document.getElementById("ageJoueur").disabled = true;
-    //}
+    if(localStorage.getItem("prenomJoueur")){
+        document.getElementById("prenomJoueur").value = localStorage.getItem("prenomJoueur");
+        document.getElementById("prenomJoueur").disabled = true;
+    }
+    if(localStorage.getItem("ageJoueur")){
+        document.getElementById("ageJoueur").value = localStorage.getItem("ageJoueur");
+        document.getElementById("ageJoueur").disabled = true;
+    }
     return;
 }
 
@@ -98,14 +102,10 @@ function supprimerLocalStorage() {
     localStorage.removeItem("ageJoueur");
     document.getElementById("nomJoueur").disabled = false;
     document.getElementById("nomJoueur").value = "";
-    //document.getElementById("prenomJoueur").disabled = false;
-    //document.getElementById("prenomJoueur").value = "";
-    //document.getElementById("ageJoueur").disabled = false;
-    //document.getElementById("ageJoueur").value = "";
+    document.getElementById("prenomJoueur").disabled = false;
+    document.getElementById("prenomJoueur").value = "";
+    document.getElementById("ageJoueur").disabled = false;
+    document.getElementById("ageJoueur").value = "";
     return;
 }
 
-/* 
-Il faudra retirer les commentaires une fois la homePage mis à jour car actuellement
-impossible d'utiliser certaines fonctions ou partie de fonction. 
-*/
