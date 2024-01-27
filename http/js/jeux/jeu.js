@@ -9,7 +9,7 @@ var tableauIdEpreuve = ["jeuGraphe", "jeuAnglais", "jeuC", "jeuJava", "jeuWeb"];
 // Fonction qui met à jour les informations du joueur :
 function updateInformationPlayer(){
     if(localStorage.getItem("nomJoueur") == null /*|| localStorage.getItem("prenomJoueur") == null || localStorage.getItem("ageJoueur") == null */){
-        window.location.href = "..\\index.html";
+        window.location.href = "pages\index.html";
     }
     else{
         //document.getElementById("pPrenom").innerHTML = "<b>Prénom : </b>" + getPrenomJoueur();
