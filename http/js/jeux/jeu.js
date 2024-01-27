@@ -3,19 +3,18 @@
 // -----------------------------------------------------------------------------
 
 var tableauIdEpreuve = ["jeuGraphe", "jeuAnglais", "jeuC", "jeuJava", "jeuWeb"];
-var compteur = 0;
 
 // -----------------------------------------------------------------------------
 
 // Fonction qui met à jour les informations du joueur :
 function updateInformationPlayer(){
-    if(localStorage.getItem("nomJoueur") == null || localStorage.getItem("prenomJoueur") == null || localStorage.getItem("ageJoueur") == null){
-        window.location.href = "../pages/index.html";
+    if(localStorage.getItem("nomJoueur") == null /*|| localStorage.getItem("prenomJoueur") == null || localStorage.getItem("ageJoueur") == null */){
+        window.location.href = "..\\index.html";
     }
     else{
-        document.getElementById("pPrenom").innerHTML = "<b>Prénom : </b>" + getPrenomJoueur();
+        //document.getElementById("pPrenom").innerHTML = "<b>Prénom : </b>" + getPrenomJoueur();
         document.getElementById("pNom").innerHTML = "<b>Nom : </b>" + getNomJoueur();
-        document.getElementById("pAge").innerHTML = "<b>Age : </b>" + getAgeJoueur() + " ans";
+        //document.getElementById("pAge").innerHTML = "<b>Age : </b>" + getAgeJoueur() + " ans";
     }
 }
 
@@ -26,7 +25,6 @@ function updateEpreuveMenu(){
     for(let i = 0; i < tableauIdEpreuve.length; i++){
         var mot = document.getElementById(tableauIdEpreuve[i]);
         if(localStorage.getItem(tableauIdEpreuve[i]) == "true"){
-            compteur++;
             mot.textContent = "Validé";
             mot.className ="green-text";
         }
@@ -36,27 +34,3 @@ function updateEpreuveMenu(){
         }
     }
 }
-
-// -----------------------------------------------------------------------------
-
-// Fonction qui remet le jeu à zéro :
-function restartGame(reset){
-    if (reset)
-        localStorage.clear();
-    window.location.href = "../pages/index.html";
-}
-
-// -----------------------------------------------------------------------------
-
-// -----------------------------------------------------------------------------
-
-// Fonction qui affiche/désafiche le dialogue pour quitter
-function dispLeaveBox(show){
-    var box = document.getElementById("leave-box");
-    if(show){
-        box.style.display = "block";
-    } else {
-        box.style.display = "none";
-    }
-}
-// -----------------------------------------------------------------------------

@@ -3,7 +3,7 @@
 
 <head>
 	<title>Escape the redoublement</title>
-	<link rel="stylesheet" type="text/css" href="../styles/jeu.css" />
+	<link rel="stylesheet" type="text/css" href="../styles/index.css" />
 	<link rel="stylesheet" href="../styles/dialogBox.css">
 	<link rel="stylesheet" type="text/css" href="../styles/main.css" />
 	<!--<meta http-equiv="refresh" content="2" > Pour refresh la page toutes les 2s-->
@@ -13,9 +13,10 @@
 	<div class="container">
 		<div class="center">
 			<!-- Div du milieu -->
-			<img id="image" src="../img/scenes/EntreeDuBatimentFleche.jpeg" alt="Workplace" usemap="#workmap">
+			<img id="image" src="../img/scenes/EntreeDuBatiment.jpeg" alt="Workplace" usemap="#workmap">
+
 			<map name="workmap">
-				<area shape="rect" coords="80,80,80,80" alt="Computer" onclick="replaceImage('deux')" />
+				<area shape="rect" coords="80,470,395,370" alt="Computer" onclick="replaceImage('deux')" />
 			</map>
 
 			<map name="entreeDuBatMap">
@@ -83,13 +84,13 @@
 			</map>
 			<div class="dialogBox">
 				<p id="dialogBoxId">
-					Bienvenue sur Escape the redoublement ! Le but du jeu est de passer 5 épreuves afin de récupérer son diplôme de LicenceClique sur le tram pour commencer.
+					Texte
 				</p>
 			</div>
 		</div>
 		<div class="right">
-			<div class="box-right box-shadow">
-				<h2 id="right-box-title">Mon personnage</h2>
+			<div class="box-right box-shadow-round-top-left">
+				<h2>Mon personnage</h2>
 				<div class="container-p">
 					<div class="left-p">
 						<img id="user-icon" src="../img/interface/user.jpg">
@@ -105,7 +106,7 @@
 				<div id="test-status" class="box-shadow-round">
 					<div class="img-txt">
 						<img src="../img/interface/progress.jpg">
-						<h3>Progression de l'année</h3>
+						<h4>Progression de l'année</h4>
 					</div>
 					<div style="padding-bottom: 1vh;">
 						<div class="progress-bar">
@@ -118,11 +119,11 @@
 
 				<div id="test-section" class="box-shadow-round">
 					<div class="img-txt">
-						<img src="../img/interface/test.png">
-						<h3>Mes épreuves</h3>
+						<img src="../img/interface/progress.jpg">
+						<h4>Progression de l'année</h4>
 					</div>
 					<div id="all-test">
-						<table id="test-table">
+						<table>
 							<tr id="java-test">
 								<td>
 									<div class="left centered">
@@ -136,7 +137,7 @@
 								</td>
 								<td>
 									<div class="right centered">
-										<button id="java-button" class="button-black">
+										<button id="java-button">
 											Recommencer
 										</button>
 									</div>
@@ -155,7 +156,7 @@
 								</td>
 								<td>
 									<div class="right centered">
-										<button id="web-button" class="button-black">
+										<button id="web-button">
 											Commencer
 										</button>
 									</div>
@@ -174,7 +175,7 @@
 								</td>
 								<td>
 									<div class="right centered">
-										<a href="englishGame.html"><button id="english-button" class="button-black">
+										<a href="englishGame.html"><button id="english-button">
 												Réessayer
 											</button></a>
 									</div>
@@ -193,7 +194,7 @@
 								</td>
 								<td>
 									<div class="right centered">
-										<button id="graph-button" class="button-black">
+										<button id="graph-button">
 											Recommencer
 										</button>
 									</div>
@@ -212,9 +213,9 @@
 								</td>
 								<td>
 									<div class="right centered">
-										<a href="cGame.html"><button id="c-button" class="button-black">
+										<button>
 											Réessayer
-										</button></a>
+										</button>
 									</div>
 								</td>
 							</tr>
@@ -224,31 +225,10 @@
 					<div class="img-txt">
 						<img src="../img/interface/mini-games.png">
 						<h4>Mini Jeux</h4>
-						<button style="margin-left: 1vw;" class="button-black">Jouer</button>
+						<button style="margin-left: 1vw;">Jouer</button>
 					</div>
 				</div>
-				<a onclick=dispLeaveBox(true)> 
-					<div id="leave">
-						<h4>Quitter</h4>
-						<img class="icon" src="../img/interface/leave.png">
-					</div>
-				</a>
 			</div>
-		</div>
-	</div>
-
-	<div id="leave-box">
-		<div id="leave" onclick=restartGame(false)>
-			<h4>Quitter</h4>
-			<img class="icon" src="../img/interface/leave.png">
-		</div>
-		<div id="leave" onclick=restartGame(true)>
-			<h4>Recommencer</h4>
-			<img class="icon" src="../img/interface/leave.png">
-		</div>
-		<img id="leave-prof" src="../img/interface/prof.png" />
-		<div id="exit" onclick=dispLeaveBox(false)>
-			<img id="remove-icon" src="../img/interface/remove.png">
 		</div>
 	</div>
 
