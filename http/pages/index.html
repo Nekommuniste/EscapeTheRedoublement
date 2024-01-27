@@ -2,7 +2,7 @@
 <html>
 
 <head>
-	<title>ESCAPE THE REDOUBLEMENT</title>
+	<title>Escape the redoublement</title>
 	<link rel="stylesheet" type="text/css" href="../styles/accueil/style_accueil.css" />
 	<link rel="stylesheet" type="text/css" href="../styles/main.css" />
 </head>
@@ -11,6 +11,7 @@
 	<h1><img src="../img/logos/logo.png" class="resize" /></h1>
 	<div class="container">
 		<div>
+			<br>
 			<h2>Bienvenue</h2>
 			<br>
 			<label for="nomJoueur">Entrez votre nom :</label>
@@ -23,7 +24,7 @@
 			<br>
 			<label for="ageJoueur">Entrez votre age :</label>
 			<br>
-			<input type="text" id="ageJoueur" class="boite" name="joueur" value=""></input>
+			<input type="number" id="ageJoueur" class="boite" name="joueur" value="" min="18" max="130" onkeydown="return false;"></input>
 			<br><br>
 			<button onclick="lancerJeu()">Commencer</button>
 			<button onclick="supprimerLocalStorage()">Changer les informations</button>
@@ -43,4 +44,8 @@
 	</script>
 </body>
 
+<<<<<<< HEAD
 </html>
+=======
+</html>
+>>>>>>> b58fb44c71718bd216b21e2b12f7742631f731d8
