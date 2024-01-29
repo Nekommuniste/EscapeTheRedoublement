@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Escape the redoublement</title>
+	<link rel="stylesheet" type="text/css" href="../styles/accueil/style_accueil.css" />
+	<link rel="stylesheet" type="text/css" href="../styles/main.css" />
+</head>
+
+<body>
+	<h1><img src="../img/logos/logo.png" class="resize" /></h1>
+	<div class="container">
+		<div>
+			<br>
+			<h2>Bienvenue</h2>
+			<label for="nomJoueur">Entrez votre nom :</label>
+			<br>
+			<input type="text" id="nomJoueur" class="boite" name="joueur" value=""></input>
+			<br>
+			<label for="prenomJoueur">Entrez votre prenom :</label>
+			<br>
+			<input type="text" id="prenomJoueur" class="boite" name="joueur" value=""></input>
+			<br>
+			<label for="ageJoueur">Entrez votre age :</label>
+			<br>
+			<input type="text" id="ageJoueur" class="boite" name="joueur" value=""></input>
+			<br><br>
+			<button onclick="lancerJeu()">Commencer</button>
+			<button onclick="supprimerLocalStorage()">Changer les informations</button>
+			<br><br>
+			<img src="../img/interface/prof.png" class="prof" />
+
+		</div>
+
+	</div>
+	<br><br><br><br><br><br><br><br><br><br><br>
+	<img src="../img/logos/logo_uphf.png" class="uphf" />
+	<script src="../js/accueil/informationPlayer.js"></script>
+
+	<script>
+		// Utilise la fonction update quand la page est chargée :
+		window.addEventListener("DOMContentLoaded", update());
+	</script>
+</body>
+
+</html>

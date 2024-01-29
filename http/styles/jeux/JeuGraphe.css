@@ -1,0 +1,97 @@
+/* Cree par EUSOP Maxence 17/01/2024 */
+
+html,
+body {
+    font-family: Arial;
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+img {
+    margin: 0;
+    padding: 0;
+    display: block;
+    position: absolute;
+    height: 100vh;
+    width: auto;
+    left: 50vw;
+    transform: translateX(-50%);
+    filter: blur(2px);
+}
+
+.boxOverall {
+    display: block;
+    position: absolute;
+    top: 50vh;
+    left: 50vw;
+    background-color: lightgrey;
+    transform: translate(-50%, -50%);
+    height: 70%;
+    width: 50%;
+    border-radius: 15px;
+    margin: 0;
+    padding: 0;
+    box-shadow: 0 0 15px grey;
+}
+
+.boxTitle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #4984b8;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 15%;
+    border-radius: 15px 15px 0 0;
+    box-shadow: 0 1px 5px black;
+    user-select: none;
+}
+
+.boxAllQuestions {
+    width: 100%;
+    height: 80%;
+    border-radius: 0 0 15px 15px;
+    overflow: auto;
+    padding-right: 20px;
+}
+
+.boxQuestion {
+    background-color: #6C7984;
+    display: block;
+    margin: 20px;
+    border-radius: 15px;
+    padding: 10px;
+    user-select: none;
+    box-shadow: 0 0 10px #4984b8;
+}
+
+::-webkit-scrollbar {
+    background-color: #6C7984;
+    width: 4px;
+    border-radius: 15px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #4984b8;
+    border-radius: 15px;
+}
+
+button {
+    background-color: #4984b8;
+    color: white;
+    height: 40px;
+    width: 80px;
+    border: 0;
+    border-radius: 15px;
+    box-shadow: 0 0 15px grey;
+    margin: 0 20px 20px 20px;
+    user-select: none;
+}
+
+button:hover {
+    background-color: #2b4f6e;
+    cursor: pointer;
+}
