@@ -7,7 +7,7 @@ function replaceImage(target) {
         document.getElementById('image').useMap = "#workmap";
         //document.getElementById("dialogBoxId").textContent = tableauDialog[1];
     } else if (target === 'deux') {
-        document.getElementById('image').src = "../img/scenes/CouloirVuBas.jpeg";
+        document.getElementById('image').src = "../img/scenes/EntreeDuBatiment.jpeg";
         document.getElementById('image').useMap = "#entreeDuBatMap";
         //document.getElementById("dialogBoxId").textContent = tableauDialog[2];
     } else if (target === 'trois') {
