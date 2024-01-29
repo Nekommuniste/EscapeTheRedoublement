@@ -8,6 +8,11 @@ img {
 	margin-right: auto;
 }
 
+area {
+	width: 90%;
+	height: auto;
+}
+
 area:hover {
 	cursor: pointer;
 }
