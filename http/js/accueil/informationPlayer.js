@@ -95,7 +95,7 @@ function update() {
 
 // -----------------------------------------------------------------------------
 
-// Fonction qui supprime toutes les donnees :
+// Fonction qui supprime toutes les donnees du joueur :
 function supprimerLocalStorage() {
     localStorage.removeItem("nomJoueur");
     localStorage.removeItem("prenomJoueur");
