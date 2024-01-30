@@ -60,3 +60,7 @@ function dispLeaveBox(show){
     }
 }
 // -----------------------------------------------------------------------------
+
+function goBack(){
+    window.location.href = "../pages/jeu.html";
+}

@@ -6,6 +6,7 @@
 			- p, h1, h2, h3, h4, h5, b
 		- Buttons custom + on Hover
 		- Bar de séparation
+		- Erreur pour les textarea pas/pas bien complèter
 */
 html,
 body {
@@ -35,6 +36,10 @@ b {
 a {
 	text-decoration: none;
 	color: white;
+}
+
+p {
+	display: flex;
 }
 
 ::-webkit-scrollbar-track {
@@ -101,4 +106,12 @@ a {
 	border-radius: 15px;
 	margin: auto;
 	margin-top: 1vh;
+}
+
+.error {
+	border: 1.25px solid red;
+}
+
+.validate {
+	border: 1.5px solid green;
 }

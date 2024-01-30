@@ -8,6 +8,10 @@ body {
     color: white;
 }
 
+p {
+    color: black;
+}
+
 img {
     margin: 0;
     padding: 0;
@@ -23,8 +27,9 @@ img {
 
 textarea {
     resize: none;
-    border-radius: 7px;
-    border: 2px solid #4984b8;
+    border-radius: 3px;
+    border: 1.5px solid #4984b8;
+    margin: 0 0.5vw 0 0.5vw;
 }
 
 table {
@@ -32,6 +37,7 @@ table {
 }
 
 td {
+    text-align: center;
     border-radius: 7px;
     background-color: white;
     color: grey;
@@ -49,7 +55,7 @@ td {
     position: absolute;
     top: 50vh;
     left: 50vw;
-    background-color: lightgrey;
+    background-color: whitesmoke    ;
     transform: translate(-50%, -50%);
     height: 70%;
     width: 50%;
@@ -72,10 +78,12 @@ td {
     border-radius: 15px 15px 0 0;
     box-shadow: 0 1px 5px black;
     user-select: none;
+    color: white;
 }
 
 #sub-title {
     margin: 2%;
+    color: black;
 }
 
 .boxAllQuestions {
