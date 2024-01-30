@@ -8,6 +8,10 @@
 		- Bar de séparation
 		- Erreur pour les textarea pas/pas bien complèter
 */
+html{
+	cursor : url("../img/curseur/curseur.png"), auto;
+}
+
 html,
 body {
 	margin: 0;
@@ -74,7 +78,7 @@ p {
 }
 
 .button-black:hover {
-	cursor: pointer;
+	cursor: url("../img/curseur/doigt.png"), auto;
 	color: white;
 	background-color: #4984b8;
 }
@@ -94,7 +98,7 @@ p {
 }
 
 .button-white:hover {
-	cursor: pointer;
+	cursor: url("../img/curseur/doigt.png"), auto;
 	color: black;
 	background-color: white;
 }

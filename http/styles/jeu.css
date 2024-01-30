@@ -10,7 +10,7 @@ img {
 }
 
 area:hover {
-	cursor: pointer;
+	cursor: url("../img/curseur/doigt.png"), auto;
 }
 
 .icon {
@@ -302,7 +302,7 @@ td {
 	right: 34%;
 	position: fixed;
 	border-radius: 5px;
-	cursor: pointer;
+	cursor: url("../img/curseur/doigt.png"), auto;
 }
 
 #remove-icon {
@@ -356,7 +356,7 @@ td {
 }
 
 #leave:hover {
-	cursor: pointer;
+	cursor: url("../img/curseur/doigt.png"), auto;
 	color: white;
 	background-color: #4984b8;
 }
