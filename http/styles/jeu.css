@@ -6,11 +6,7 @@ img {
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
-}
-
-area {
-	width: 90%;
-	height: auto;
+	pointer-events: none;
 }
 
 area:hover {
@@ -68,6 +64,7 @@ area:hover {
 	align-items: center;
 	overflow: hidden;
 	user-select: none;
+	margin: auto;
 }
 
 .right-p p {
@@ -85,9 +82,11 @@ area:hover {
 }
 
 #test-section {
+	width: 80%;
 	min-height: 50vh;
 	overflow: hidden;
 	user-select: none;
+	margin: 2vh auto 0 auto;
 }
 
 #progress-amount {
@@ -154,7 +153,7 @@ area:hover {
 	max-height: 90%;
 	border-bottom-right-radius: 10px;
 	border-bottom-left-radius: 10px;
-	box-shadow: 0px 0px 10px grey;
+	box-shadow: 0px 0px 10px rgb(190, 190, 190);
 	user-select: none;
 }
 
@@ -180,24 +179,32 @@ area:hover {
 	user-select: none;
 }
 
+#right-box-title {
+	padding-top: 2vh;
+}
+
+.box-shadow {
+	box-shadow: 0px 0px 10px rgb(197, 197, 197);
+}
+
 .box-shadow-round {
 	margin: 2vh;
 	margin-top: 3vh;
-	box-shadow: 0px 0px 10px grey;
+	box-shadow: 0px 0px 10px rgb(197, 197, 197);
 	border-radius: 15px;
 	user-select: none;
 }
 
 .box-shadow-round-top-left {
 	margin-top: 3vh;
-	box-shadow: 0px 0px 10px grey;
+	box-shadow: 0px 0px 10px rgb(197, 197, 197);
 	border-top-left-radius: 15px;
 	user-select: none;
 }
 
 .box-shadow-round-top-right {
 	margin-top: 3vh;
-	box-shadow: 0px 0px 10px grey;
+	box-shadow: 0px 0px 10px rgb(197, 197, 197);
 	border-top-right-radius: 15px;
 	user-select: none;
 }
@@ -205,7 +212,7 @@ area:hover {
 #user-icon {
 	height: 10vh;
 	width: 10vh;
-	box-shadow: 0 0 10px grey;
+	box-shadow: 0 0 10px rgb(197, 197, 197);
 	border-radius: 15px;
 	background-color: white;
 	padding: 1vh;
@@ -242,11 +249,10 @@ h5 {
 
 #all-test {
 	height: 30vh;
-	width: 95%;
+	width: 80%;
 	max-width: 95%;
 	margin: auto;
-	overflow-y: scroll;
-	overflow-x: hidden;
+	overflow: hidden;
 	user-select: none;
 }
 
@@ -271,6 +277,46 @@ td {
 	width: 5vh;
 }
 
+#leave-box {
+	display: none;
+	position: fixed;
+    top: 35%;
+    left: 25%;
+	right: 25%;
+    width: 40%;
+	height: fit-content;
+    background-color: #f1f1f1;
+    padding: 2vh;
+    box-shadow: 0 0 10px rgb(197, 197, 197);
+	border-radius: 15px;
+	z-index: 1000;
+}
+
+#exit {
+	transition: 0.5s;
+	background-color: white;
+	width: 1vw;
+	height: 1vw;
+	float: right;
+	top: 36%;
+	right: 34%;
+	position: fixed;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+#remove-icon {
+	height: 1vw;
+	width: 1vw;
+}
+
+#leave-prof {
+	position: fixed;
+	float: left;
+	width: 25vh;
+	height: auto;
+}
+
 #dialog-box {
 	height: 90vh;
 	overflow-y: scroll;
@@ -286,6 +332,31 @@ td {
 #dialog-table td {
 	padding-top: 3.5vh;
 	text-align: left;
-	border-bottom: 0.5vh solid lightgrey;
+	border-bottom: 0.5vh solid rgb(197, 197, 197);
 	border-radius: 0.5vh;
+}
+
+#test-table {
+	margin: auto;
+}
+
+#leave {
+	float: right;
+	height: auto;
+	width: 20%;
+	margin: 2vw;
+	padding: 0 0.5vw 0 1vw ;
+	user-select: none;
+	transition-duration: 1s;
+	border-radius: 15px;
+	background-color: white;
+	border: none;
+	color: black;
+	box-shadow: 0px 0px 5px rgb(197, 197, 197);
+}
+
+#leave:hover {
+	cursor: pointer;
+	color: white;
+	background-color: #4984b8;
 }

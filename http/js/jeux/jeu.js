@@ -40,9 +40,23 @@ function updateEpreuveMenu(){
 // -----------------------------------------------------------------------------
 
 // Fonction qui remet le jeu à zéro :
-function restartGame(){
-    localStorage.clear();
+function restartGame(reset){
+    if (reset)
+        localStorage.clear();
+    window.location.href = "../pages/index.html";
 }
 
 // -----------------------------------------------------------------------------
 
+// -----------------------------------------------------------------------------
+
+// Fonction qui affiche/désafiche le dialogue pour quitter
+function dispLeaveBox(show){
+    var box = document.getElementById("leave-box");
+    if(show){
+        box.style.display = "block";
+    } else {
+        box.style.display = "none";
+    }
+}
+// -----------------------------------------------------------------------------

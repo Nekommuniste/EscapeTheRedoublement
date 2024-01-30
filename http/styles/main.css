@@ -32,6 +32,11 @@ b {
 	user-select: none;
 }
 
+a {
+	text-decoration: none;
+	color: white;
+}
+
 ::-webkit-scrollbar-track {
 	-webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
 	border-radius: 10px;
@@ -49,29 +54,50 @@ b {
 	background-color: #4984b8;
 }
 
-button {
+.button-black {
+	height: 2.5vh;
 	width: auto;
 	margin-left: 2vw;
+	padding: 0 0.5vw 0 0.5vw ;
 	user-select: none;
 	transition-duration: 1s;
 	border-radius: 15px;
 	background-color: white;
 	border: none;
-	box-shadow: 0px 0px 5px grey;
-	margin-top: 1vh;
-	margin-bottom: 1vh;
+	color: black;
+	box-shadow: 0px 0px 5px rgb(197, 197, 197);
 }
 
-button:hover {
+.button-black:hover {
 	cursor: pointer;
 	color: white;
 	background-color: #4984b8;
 }
 
+.button-white {
+	color: white;
+	width: auto;
+	margin-left: 2vw;
+	user-select: none;
+	transition-duration: 1s;
+	border-radius: 15px;
+	background-color: #4984b8;
+	border: none;
+	box-shadow: 0px 0px 5px rgb(197, 197, 197);
+	margin-top: 1vh;
+	margin-bottom: 1vh;
+}
+
+.button-white:hover {
+	cursor: pointer;
+	color: black;
+	background-color: white;
+}
+
 .separation-bar {
 	width: 75%;
 	height: 0.5vh;
-	background-color: lightgray;
+	background-color: rgb(197, 197, 197);
 	border-radius: 15px;
 	margin: auto;
 	margin-top: 1vh;
