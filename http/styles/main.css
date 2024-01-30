@@ -7,6 +7,10 @@
 		- Buttons custom + on Hover
 		- Bar de séparation
 */
+html{
+	cursor : url("../img/curseur/curseur.png"), auto;
+}
+
 html,
 body {
 	margin: 0;
@@ -69,7 +73,7 @@ a {
 }
 
 .button-black:hover {
-	cursor: pointer;
+	cursor: url("../img/curseur/doigt.png"), auto;
 	color: white;
 	background-color: #4984b8;
 }
@@ -89,7 +93,7 @@ a {
 }
 
 .button-white:hover {
-	cursor: pointer;
+	cursor: url("../img/curseur/doigt.png"), auto;
 	color: black;
 	background-color: white;
 }

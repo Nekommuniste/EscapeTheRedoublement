@@ -1,3 +1,7 @@
+html{
+	cursor : url("../img/curseur/curseur.png"), auto;
+}
+
 body{
 	background-image: url("../../img/interface/accueil.jpg");
 	background-repeat: no-repeat;
@@ -6,6 +10,10 @@ body{
 	align-items: center;
 	overflow: hidden;
 	user-select: none;
+}
+
+label:hover{
+	cursor: url("../../img/curseur/curseur.png"), auto;
 }
 
 img {
@@ -45,7 +53,7 @@ button {
 }
 	
 button:hover {
-	cursor: pointer;
+	cursor: url("../../img/curseur/doigt.png"), auto;
 	color: white;
 	background-color: #4984b8;
 }
