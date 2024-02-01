@@ -249,10 +249,11 @@ h5 {
 
 #all-test {
 	height: 30vh;
-	width: 80%;
+	width: 95%;
 	max-width: 95%;
 	margin: auto;
-	overflow: hidden;
+	overflow-y: scroll;
+	overflow-x: hidden;
 	user-select: none;
 }
 
