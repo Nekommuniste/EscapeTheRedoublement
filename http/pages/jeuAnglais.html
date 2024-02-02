@@ -9,6 +9,7 @@
 
 <body>
     <img src="../img/scenes/Salle3.jpeg" alt="Salle de cours">
+    <img id="prof" src="../img/interface/prof.png">
     <div class="boxOverall">
         <div class="boxTitle">
             <h1>Epreuve d'Anglais</h1>
@@ -46,13 +47,35 @@
                 <p class="q-box">I <textarea id="q11" rows="1"></textarea> my coffee with milk <textarea id="q12" rows="1"></textarea> sugar.</p>
                 
 
-            <button style="float: right; margin-bottom: 5vw;" class="button-black" onclick=checkGame()>
+            <button id="send-answer" style="float: right; margin-bottom: 5vw;" class="button-black" onclick=checkGame()>
                 Enregistrer les réponses
             </button>
         </div>
 
         <script src="../js/jeux/englishGame.js"></script>
         <script src="../js/jeux/jeu.js"></script>
-</body>
+        <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.2/dist/confetti.browser.min.js"></script>
+
+        <script>
+            function sleep(ms) {
+                return new Promise(resolve => setTimeout(resolve, ms));
+            }
+
+            document.querySelector("#send-answer").addEventListener("click", () => {
+                sleep(500).then(() => {
+                if (localStorage.getItem("jeuAnglais") == "true"){
+                    for (let i = 0; i < Math.floor(Math.random() * 16); i++){
+                        confetti({
+                            origin: {
+                                x: Math.random(),
+                                y: Math.random() - 0.1
+                            }
+                        })
+                    }
+                }
+            });
+            })        
+        </script>
+    </body>
 
 </html>

@@ -10,9 +10,10 @@ body {
 
 p, h3 {
     color: black;
+    font-size: medium;
 }
 
-img {
+#bg-image {
     margin: 0;
     padding: 0;
     display: block;
@@ -29,7 +30,7 @@ textarea {
     resize: none;
     border-radius: 3px;
     border: 1.5px solid #4984b8;
-    margin: 0 0.5vw 0 0.5vw;
+    margin: 1vh 0.5vw 1vh 0.5vw;
 }
 
 table {
@@ -130,4 +131,12 @@ button {
 button:hover {
     background-color: #2b4f6e;
     cursor: pointer;
+}
+
+#prof {
+    position: relative;
+    width: 10vw;
+    left: 15vw;
+    top: 60%;
+    float: left;
 }

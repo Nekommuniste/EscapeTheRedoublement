@@ -115,6 +115,8 @@ area:hover {
 }
 
 #progress-pourcentage {
+	float: left;
+	margin-left: 6vw;
 	color: white;
 	text-align: center;
 	overflow: hidden;
@@ -263,7 +265,7 @@ td {
 }
 
 #leave {
-	width: 15vw;
+	width: auto;
 	text-align: center;
 	display: flex;
 	background-color: red;
@@ -282,9 +284,9 @@ td {
 	display: none;
 	position: fixed;
     top: 35%;
-    left: 25%;
-	right: 25%;
-    width: 40%;
+    left: 15%;
+	right: 35%;
+    width: auto;
 	height: fit-content;
     background-color: #f1f1f1;
     padding: 2vh;
@@ -300,7 +302,7 @@ td {
 	height: 1vw;
 	float: right;
 	top: 36%;
-	right: 34%;
+	right: 36%;
 	position: fixed;
 	border-radius: 5px;
 	cursor: url("../img/curseur/doigt.png"), auto;

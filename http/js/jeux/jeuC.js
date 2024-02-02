@@ -1,4 +1,10 @@
-var answer = ["went", "left", "forgotten", "love", "curled up", "prepared", "finished", "completed", "blossom", "reads", "prefer", "and"];
+var answer = [
+    "float",
+    "free()",
+    "float a = 2.8",
+    "#define MAX 30",
+    "return nombre",
+    "return result"];
 var result = 0;
 
 function checkGame(){
@@ -18,7 +24,11 @@ function checkGame(){
     }
 
     if (result == answer.length){
-        localStorage.setItem("jeuAnglais", "true");
-        goBack();
+        localStorage.setItem("jeuC", "true");
+        sleep(5000).then(() => {goBack();});
     }
+}
+
+function sleep(ms) {
+    return new Promise(resolve => setTimeout(resolve, ms));
 }

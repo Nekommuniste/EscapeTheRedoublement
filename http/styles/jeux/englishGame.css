@@ -45,6 +45,10 @@ td {
     border: 2px solid #4984b8;
 }
 
+p {
+    display: flex;
+}
+
 .q-box {
     margin-left: 2vw;
     margin-top: 2vh;
@@ -130,4 +134,14 @@ button {
 button:hover {
     background-color: #2b4f6e;
     cursor: pointer;
+}
+
+#prof {
+    filter: none;
+    position: relative;
+    height: auto;
+    width: 10vw;
+    left: 20vw;
+    top: 60%;
+    float: left;
 }
