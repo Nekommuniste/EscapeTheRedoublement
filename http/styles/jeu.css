@@ -148,7 +148,7 @@ area:hover {
 	padding-right: 15px;
 	user-select: none;
 }
-area{
+.center area{
 	width: 90%;
 	height: auto;
 	max-height: 90%;
