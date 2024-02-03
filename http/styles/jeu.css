@@ -8,7 +8,10 @@ img {
 	margin-right: auto;
 	pointer-events: none;
 }
-
+area{
+	width: 90%;
+	height: auto;
+}
 area:hover {
 	cursor: url("../img/curseur/doigt.png"), auto;
 }
