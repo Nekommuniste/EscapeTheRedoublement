@@ -151,6 +151,7 @@ area:hover {
 area{
 	width: 90%;
 	height: auto;
+	max-height: 90%;
 }
 .center img {
 	width: 90%;
