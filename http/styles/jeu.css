@@ -1,4 +1,4 @@
-img {
+#image {
 	user-select: none;
 	text-align: center;
 	width: 900px;
@@ -147,10 +147,9 @@ area:hover {
 	padding-right: 15px;
 	user-select: none;
 }
-area{
+area {
 	width: 90%;
 	height: auto;
-	max-height: 90%;
 }
 .center img {
 	width: 90%;

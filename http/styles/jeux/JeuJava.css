@@ -1,4 +1,4 @@
-/* Cree par EUSOP Maxence 17/01/2024 */
+/* Base Créée par EUSOP Maxence le 17/01/2024 */
 
 html,
 body {
@@ -8,12 +8,7 @@ body {
     color: white;
 }
 
-p, h3 {
-    color: black;
-    font-size: medium;
-}
-
-#bg-image {
+img {
     margin: 0;
     padding: 0;
     display: block;
@@ -23,32 +18,6 @@ p, h3 {
     left: 50vw;
     transform: translateX(-50%);
     filter: blur(2px);
-    user-select: none;
-}
-
-textarea {
-    resize: none;
-    border-radius: 3px;
-    border: 1.5px solid #4984b8;
-    margin: 1vh 0.5vw 1vh 0.5vw;
-}
-
-table {
-    margin-left: 2vw;
-}
-
-td {
-    text-align: center;
-    border-radius: 7px;
-    background-color: white;
-    color: grey;
-    padding: 5px;
-    border: 2px solid #4984b8;
-}
-
-.q-box {
-    margin-left: 2vw;
-    margin-top: 2vh;
 }
 
 .boxOverall {
@@ -56,7 +25,7 @@ td {
     position: absolute;
     top: 50vh;
     left: 50vw;
-    background-color: whitesmoke    ;
+    background-color: lightgrey;
     transform: translate(-50%, -50%);
     height: 70%;
     width: 50%;
@@ -79,12 +48,6 @@ td {
     border-radius: 15px 15px 0 0;
     box-shadow: 0 1px 5px black;
     user-select: none;
-    color: white;
-}
-
-#sub-title {
-    margin: 2%;
-    color: black;
 }
 
 .boxAllQuestions {
@@ -124,19 +87,66 @@ button {
     border: 0;
     border-radius: 15px;
     box-shadow: 0 0 15px grey;
-    margin: 0 20px 20px 20px;
+    margin: 0px 20px 20px 20px;
     user-select: none;
+    margin-left: 335px;
 }
 
 button:hover {
     background-color: #2b4f6e;
-    cursor: url("../img/curseur/doigt.png"), auto;
+    cursor: url("../../img/curseur/doigt.png"), auto;
 }
 
-#prof {
-    position: relative;
-    width: 10vw;
-    left: 15vw;
-    top: 60%;
-    float: left;
+/* Ajout de code par FAUCONNNIER Sarah le 09/02/2024 */
+
+label,
+textarea {
+  font-size: 13px;
+  letter-spacing: 1px;
+  color : black;
+  margin-left: 15px;
+}
+
+#console {
+  padding: 10px;
+  max-width: 100%;
+  line-height: 1.5;
+  border-radius: 15px;
+  border: 1px solid #ccc;
+  box-shadow: 1px 1px 1px #999;
+  color : green;
+  background-color: black;
+  resize : none;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.scene{
+    display: block;
+    height: 25vh;
+    width: auto;
+    border-radius: 15px;
+    filter: blur(0px);
+    left: 25vw;
+    margin: 5px;
+}
+
+ #dialogue{
+    padding: 10px;
+    max-width: 100%;
+    line-height: 1.5;
+    border-radius: 15px;
+    border: 1px solid #ccc;
+    box-shadow: 1px 1px 1px #999;
+    color : black;
+    background-color: grey;
+    resize : none;
+  }
+
+#bouton{
+    height: 25px;
+    margin-top : 3px;
 }

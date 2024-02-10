@@ -133,7 +133,7 @@ button {
 
 button:hover {
     background-color: #2b4f6e;
-    cursor: pointer;
+    cursor: url("../img/curseur/doigt.png"), auto;
 }
 
 #prof {
