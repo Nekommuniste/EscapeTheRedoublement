@@ -1,6 +1,10 @@
-// Cree par EUSOP Maxence 18/01/2024 + CARTIERE Matthieu 2/02/2024
+// Cree par EUSOP Maxence 18/01/2024 + CARTIERE Matthieu 2/02/2024 + FAUCONNIER Sarah 15/02/2024
 
 window.onload = buttonStatu;
+var musique = document.createElement("audio");
+    musique.src  = "../sons/Haggstrom.mp3";
+    musique.play();
+    musique.loop = true; // Pour que la musique se rejoue après qu'elle se soit finie
 // -----------------------------------------------------------------------------
 
 var tableauIdEpreuve = ["jeuGraphe", "jeuAnglais", "jeuC", "jeuJava", "jeuWeb"];
@@ -87,3 +91,21 @@ function buttonStatu(){
         }
     }
 }
+
+
+// -----------------------------------------------------------------------------
+
+
+// Déclaration de la variable musique, qui correspond à la musique de fond.
+musique = document.createElement("audio");
+musique.src  = "../sons/Haggstrom.mp3";
+// Volume de la musique à 25%
+musique.volume = 0.25; 
+// Fonction qui joue la musique et la répète en boucle (la musique se joue dès que le joueur clique sur quelque chose).
+document.addEventListener("click", function() {
+    // Vérifie si la musique est déjà en cours de lecture
+    if (!musique || musique.paused) {
+        musique.play();
+        musique.loop = true; // Pour que la musique se rejoue après qu'elle se soit finie
+    }
+});
