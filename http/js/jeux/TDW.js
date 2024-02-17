@@ -318,7 +318,7 @@ function startQuiz() {
       setTimeout(function () {
         if (score == questions.length) {
           alert(`Congratulations! You got a perfect score: ${score}/${questions.length}`);
-		  localStorage.setItem("jeuTDW", "true");
+		  localStorage.setItem("jeuWEB", "true");
         window.location.href = "../pages/jeu.html";
         } else {
           alert(`Quiz completed! \nFinal score: ${score}/${questions.length}`);
