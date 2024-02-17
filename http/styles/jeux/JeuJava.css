@@ -127,7 +127,7 @@ label {
 .scene{
     display: block;
     height: 25vh;
-    width: auto;
+    width: 45vw;
     border-radius: 15px;
     filter: blur(0px);
     left: 25vw;
@@ -146,7 +146,13 @@ label {
     resize : none;
   }
 
-#bouton{
+.bouton-container {
+    display: flex;
+}
+
+.bouton {
     height: 25px;
-    margin-top : 3px;
+    margin-top: 3px;
+    margin-left: 255px;
+    margin-right: -175px;
 }

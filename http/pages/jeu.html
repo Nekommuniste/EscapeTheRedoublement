@@ -212,7 +212,7 @@
 					<div class="img-txt">
 						<img src="../img/interface/mini-games.png">
 						<h4>Mini Jeux</h4>
-						<button style="margin-left: 1vw;" class="button-black">Jouer</button>
+						<button style="margin-left: 1vw;" class="button-black" onclick="miniJeu()">Jouer</button>
 					</div>
 				</div>
 				<a onclick=dispLeaveBox(true)> 
@@ -250,6 +250,11 @@
 		// Les deux lignes permettent de mettre à jour les menus (information du joueur/avancement des épreuves) :
 		window.addEventListener("DOMContentLoaded", updateInformationPlayer());
 		window.addEventListener("DOMContentLoaded", updateEpreuveMenu());
+
+		// Fonction pour lancer le mini :
+		function miniJeu(){
+			window.location.href = "rgb.html";
+		}
 	</script>
 </body>
 
