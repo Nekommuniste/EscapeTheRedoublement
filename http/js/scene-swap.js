@@ -27,14 +27,14 @@ function replaceImage(target) {
         //document.getElementById("dialogBoxId").textContent = tableauDialog[1];
         SonPas.play();
     } else if (target == 'quatre') {
-        document.getElementById('image').src = "../img/scenes/Salle.jpeg";
+        document.getElementById('image').src = "../img/scenes/SalleFleche.jpeg";
         document.getElementById('image').useMap = "#epreuve1";
         //document.getElementById("dialogBoxId").textContent = tableauDialog[1];
         SonPas.play();
         SonPorte.play();
     } 
      else if (target == 'cinq') {
-        document.getElementById('image').src = "../img/scenes/Salle2.jpeg";
+        document.getElementById('image').src = "../img/scenes/Salle2Fleche.jpeg";
         document.getElementById('image').useMap = "#epreuve2";
         //document.getElementById("dialogBoxId").textContent = tableauDialog[1];
         SonPas.play();
@@ -58,27 +58,27 @@ function replaceImage(target) {
         SonPas.play();
     }
     else if (target == 'neuf') {
-        document.getElementById('image').src = "../img/scenes/CouloirSalle200C200G3Fleche.jpeg";
+        document.getElementById('image').src = "../img/scenes/CouloirSalle200C200G2Fleche.jpeg";
         document.getElementById('image').useMap = "#PorteTP";
         //document.getElementById("dialogBoxId").textContent = tableauDialog[1];
         SonPas.play();
     }
     else if (target == 'dix') {
-        document.getElementById('image').src = "../img/scenes/Salle3.jpeg";
+        document.getElementById('image').src = "../img/scenes/Salle3Fleche.jpeg";
         document.getElementById('image').useMap = "#Epreuve3";
         //document.getElementById("dialogBoxId").textContent = tableauDialog[1];
         SonPas.play();
         SonPorte.play();
     }
     else if (target == 'onze') {
-        document.getElementById('image').src = "../img/scenes/Salle5.jpeg";
+        document.getElementById('image').src = "../img/scenes/Salle5Fleche.jpeg";
         document.getElementById('image').useMap = "#Epreuve4";
         //document.getElementById("dialogBoxId").textContent = tableauDialog[1];
         SonPas.play();
         SonPorte.play();
     }
     else if (target == 'douze') {
-        document.getElementById('image').src = "../img/scenes/Salle200C.jpeg";
+        document.getElementById('image').src = "../img/scenes/Salle200CFleche.jpeg";
         document.getElementById('image').useMap = "#epreuve5";
         //document.getElementById("dialogBoxId").textContent = tableauDialog[1];
         SonPas.play();
