@@ -43,8 +43,8 @@ function getAgeJoueur() {
 
 // Fonction qui verifie l'entree des donnees dans les inputs :
 function verifieValeurInput(idInput) {
-    var inputVerif = document.getElementById(idInput).value;
-    if (inputVerif.trim() != "") {
+    var inputVerif = document.getElementById(idInput);
+    if (inputVerif.value.trim() != "" && inputVerif.checkValidity()) {
         document.getElementById(idInput).style.background = "white";
         return true;
     }
