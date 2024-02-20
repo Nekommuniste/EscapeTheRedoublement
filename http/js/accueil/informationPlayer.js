@@ -100,6 +100,7 @@ function supprimerLocalStorage() {
     localStorage.removeItem("nomJoueur");
     localStorage.removeItem("prenomJoueur");
     localStorage.removeItem("ageJoueur");
+    console.log("Les données sont supprimés");
     document.getElementById("nomJoueur").disabled = false;
     document.getElementById("nomJoueur").value = "";
     document.getElementById("prenomJoueur").disabled = false;
