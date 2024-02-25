@@ -1,22 +1,24 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html>
 
 <head>
+    <title>Epreuve de Technologie du web</title>
+    <link rel="stylesheet" href="../styles/jeux/TDW.css" />
 
-  <meta charset="UTF-8" />
-  <title>Epreuve TDW</title>
-
-  <link rel="stylesheet" href="../styles/jeux/TDWlib.css">
-  <link rel="stylesheet" href="../styles/jeux/TDWstyle.css">
 </head>
 
 <body>
-  <div id="epreuve">
-    <div id="score">Score: 0</div>
-    <h2 id="title"></h2>
-    <div id="questions"></div>
-  </div>
-  <script src="../js/jeux/TDW.js"></script>
+    <img src="../img/scenes/Salle200C4.jpeg" alt="Salle de cours">
+    <div class="boxOverall">
+        <div class="boxTitle">
+            <h1>Epreuve de Technologie du web</h1>
+        </div>
+
+        <div class="boxAllQuestions" id="boxAllQuestions">
+        </div>
+		<button onclick="window.location.href = '../pages/jeu.html';">Quittez</button>
+    </div>
+    <script src="../js/jeux/TDW.js"></script>
 </body>
 
 </html>
