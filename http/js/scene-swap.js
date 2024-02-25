@@ -1,5 +1,33 @@
 // Créé par ???, modifié par Sarah le 15/02/2024 (implémentations des sons)
-
+var pourcentagesZones = [
+    "16.45%,23.9%,61.7%,71.6%",
+    "0%,77.5%,100%,100%",
+    "29.63%,17%%,50.2%,56%",
+    "55%,21.5%,70.8%,54.9%",
+    "0%,77.5%,100%,100%",
+	"38.68%,26.25%,42.8%,56.08%",
+	"56.8%,33.4%,58.84%,51.31%",
+	"26.7%,32.2%,69.55%,50.37%",
+	"92.2%,33.41%,100%,72.8%",
+	"53.5%,32.8%,92.2%,51.1%",
+	"0%,77.5%,100%,100%",
+	"0%,77.5%,100%,100%",
+	"18.1%,29.23%,51.44%,54.3%",
+	"74.9%,38.8%,97.1%,80%",
+	"32.1%,26.85%,57.61%,71.6%",
+	"0.5%,27%,8%,82%",
+	"0%,77.5%,100%,100%",
+	"73.6%,25.08%,82.71%,100%",
+	"24.7%,26.9%,70.8%,46.8%",
+	"21%,29.23%,28.8%,53%",
+	"78.2%,48.9%,87.25%,52%",
+	"26.7%,32.2%,69.55%,50.37%",
+	"92.2%,33.41%,100%,72.8%",
+	"0%,77.5%,100%,100%",
+	"58.02%,28.04%,83.5%,76.37%",
+	"0%,77.5%,100%,100%",
+	"21.4%,43.56%,81.5%,56.1%"
+];
 // Déclarations des bruits de pas et de porte :
 var SonPas = document.createElement("audio");
 SonPas.src = "../sons/pas.wav";
@@ -87,3 +115,32 @@ function replaceImage(target) {
     // Supprime l'événement onclick pour éviter la répétition
     document.getElementById('image').onclick = null;
 }
+function creerZonesCliquables() {
+    var imageWidth = document.querySelector('.center img').offsetWidth;
+    var imageHeight = document.querySelector('.center img').offsetHeight;
+    var areas = document.querySelectorAll('area');
+
+    pourcentagesZones.forEach(function(pourcentage, index) {
+        var coordsEnPourcentage = pourcentage.split(',');
+
+        var coordsEnPixels = coordsEnPourcentage.map(function(coord, index) {
+            if (index % 2 === 0) {
+                return (parseFloat(coord) / 100) * imageWidth;
+            } else {
+                return (parseFloat(coord) / 100) * imageHeight;
+            }
+        });
+
+        areas[index].coords = coordsEnPixels.join(',');
+    });
+}
+
+// Appel de la fonction pour créer les zones cliquables au chargement de la page
+window.onload = creerZonesCliquables;
+
+
+
+
+
+// Appelez la fonction updateCoords() lorsque la page est chargée
+window.onload = updateCoords;
