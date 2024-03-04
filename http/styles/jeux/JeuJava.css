@@ -124,7 +124,7 @@ label {
   margin-bottom: 10px;
 }
 
-.scene{
+#scene{
     display: block;
     height: 25vh;
     width: 45vw;
