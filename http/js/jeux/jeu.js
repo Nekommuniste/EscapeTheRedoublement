@@ -1,7 +1,6 @@
 // Cree par EUSOP Maxence 18/01/2024 + CARTIERE Matthieu 2/02/2024 + FAUCONNIER Sarah 15/02/2024
 
 window.onload = buttonStatu;
-
 // -----------------------------------------------------------------------------
 
 var tableauIdEpreuve = ["jeuGraphe", "jeuAnglais", "jeuC", "jeuJava", "jeuWeb"];
