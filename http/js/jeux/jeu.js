@@ -105,3 +105,8 @@ document.addEventListener("click", function() {
         musique.loop = true; // Pour que la musique se rejoue après qu'elle se soit finie
     }
 });
+
+// Test de la musique qui s'affichent dans la console
+musique.addEventListener("play", function(event) {
+    console.log("Musique en cours de lecture :", event.target);
+});

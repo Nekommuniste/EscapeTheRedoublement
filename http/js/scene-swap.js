@@ -49,6 +49,13 @@ function replaceImage(target) {
         //document.getElementById("dialogBoxId").textContent = tableauDialog[2];
         SonPas.play();
         SonPorte.play();
+        /* Tests pour les sons de pas et de porte
+        SonPorte.addEventListener("ended", function() {
+            console.log("Le son de porte s'est joué.");
+        });
+        SonPas.addEventListener("ended", function() {
+            console.log("Le son de pas s'est joué.");
+        });*/
     } else if (target === 'trois') {
         document.getElementById('image').src = "../img/scenes/CouloirEtage1Fleche.jpeg";
         document.getElementById('image').useMap = "#Couloir";
@@ -144,3 +151,8 @@ window.onload = creerZonesCliquables;
 
 // Appelez la fonction updateCoords() lorsque la page est chargée
 window.onload = updateCoords;
+
+// Tests bruitages qui s'affichent dans la console
+musique.addEventListener("play", function(event) {
+    console.log("Audio en cours de lecture :", event.target);
+});
