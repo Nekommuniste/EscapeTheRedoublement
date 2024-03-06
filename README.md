@@ -8,7 +8,7 @@ Vous pourrez vous promener dans les couloirs de l'AB1 et même jouer à des mini
 
 Les épreuves sont les suivantes : Langage C, Technologie du web, Anglais, Langage Java et Graphes.
 
---------------------------**INSTALLATION**-------------------------------------------------------------
+----------------------------------**INSTALLATION**-------------------------------------------------------------
 
 Téléchargez le .zip du projet en allant sur <Code> puis Download ZIP :
 
