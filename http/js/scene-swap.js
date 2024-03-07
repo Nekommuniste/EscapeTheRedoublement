@@ -60,63 +60,63 @@ function replaceImage(target) {
     } else if (target === 'quatre') {
         document.getElementById('image').src = "../img/scenes/CouloirEtage1Fleche.jpeg";
         document.getElementById('image').useMap = "#Couloir";
-        document.getElementById("dialogBoxId").textContent = tableauDialog[4];
+        document.getElementById("dialogBoxId").textContent = tableauDialog[3];
         SonPas.play();
     } else if (target == 'cinq') {
         document.getElementById('image').src = "../img/scenes/SalleFleche.jpeg";
         document.getElementById('image').useMap = "#epreuve1";
-        document.getElementById("dialogBoxId").textContent = tableauDialog[13];
+        document.getElementById("dialogBoxId").textContent = tableauDialog[12];
         SonPas.play();
         SonPorte.play();
     } 
      else if (target == 'six') {
         document.getElementById('image').src = "../img/scenes/Salle2Fleche.jpeg";
         document.getElementById('image').useMap = "#epreuve2";
-        document.getElementById("dialogBoxId").textContent = tableauDialog[12];
+        document.getElementById("dialogBoxId").textContent = tableauDialog[11];
         SonPas.play();
         SonPorte.play();
     }
     else if (target == 'sept') {
         document.getElementById('image').src = "../img/scenes/HautDesEscaliersFleche.jpeg";
         document.getElementById('image').useMap = "#Haut";
-        document.getElementById("dialogBoxId").textContent = tableauDialog[5];
+        document.getElementById("dialogBoxId").textContent = tableauDialog[4];
         SonPas.play();
     }
     else if (target == 'huit') {
         document.getElementById('image').src = "../img/scenes/CouloirHautFleche.jpeg";
         document.getElementById('image').useMap = "#Etage";
-        document.getElementById("dialogBoxId").textContent = tableauDialog[6];
+        document.getElementById("dialogBoxId").textContent = tableauDialog[5];
         SonPas.play();
     } else if (target == 'neuf') {
         document.getElementById('image').src = "../img/scenes/CouloirHaut2Fleche.jpeg";
         document.getElementById('image').useMap = "#CouloirHaut";
-        document.getElementById("dialogBoxId").textContent = tableauDialog[8];
+        document.getElementById("dialogBoxId").textContent = tableauDialog[7];
         SonPas.play();
     }
     else if (target == 'dix') {
         document.getElementById('image').src = "../img/scenes/CouloirSalle200C200G2Fleche.jpeg";
         document.getElementById('image').useMap = "#PorteTP";
-        document.getElementById("dialogBoxId").textContent = tableauDialog[7];
+        document.getElementById("dialogBoxId").textContent = tableauDialog[6];
         SonPas.play();
     }
     else if (target == 'onze') {
         document.getElementById('image').src = "../img/scenes/Salle3Fleche.jpeg";
         document.getElementById('image').useMap = "#Epreuve3";
-        document.getElementById("dialogBoxId").textContent = tableauDialog[9];
+        document.getElementById("dialogBoxId").textContent = tableauDialog[8];
         SonPas.play();
         SonPorte.play();
     }
     else if (target == 'douze') {
         document.getElementById('image').src = "../img/scenes/Salle5Fleche.jpeg";
         document.getElementById('image').useMap = "#Epreuve4";
-        document.getElementById("dialogBoxId").textContent = tableauDialog[10];
+        document.getElementById("dialogBoxId").textContent = tableauDialog[9];
         SonPas.play();
         SonPorte.play();
     }
     else if (target == 'treize') {
         document.getElementById('image').src = "../img/scenes/Salle200CFleche.jpeg";
         document.getElementById('image').useMap = "#epreuve5";
-        document.getElementById("dialogBoxId").textContent = tableauDialog[11];
+        document.getElementById("dialogBoxId").textContent = tableauDialog[10];
         SonPas.play();
         SonPorte.play();
     }
