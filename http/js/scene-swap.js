@@ -145,14 +145,3 @@ function creerZonesCliquables() {
 // Appel de la fonction pour créer les zones cliquables au chargement de la page
 window.onload = creerZonesCliquables;
 
-
-
-
-
-// Appelez la fonction updateCoords() lorsque la page est chargée
-window.onload = updateCoords;
-
-// Tests bruitages qui s'affichent dans la console
-musique.addEventListener("play", function(event) {
-    console.log("Audio en cours de lecture :", event.target);
-});
