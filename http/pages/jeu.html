@@ -108,8 +108,8 @@
 					</div>
 					<div style="padding-bottom: 1vh;">
 						<div class="progress-bar">
-							<h4 id="progress-pourcentage">6/12 - 50%</h4>
-							<div class="progress-bar-value">
+							<h4 id="progress-pourcentage">0/5 - 0%</h4>
+							<div id="progress-bar-value">
 								
 							</div>
 						</div>
@@ -262,6 +262,7 @@
 		// Les deux lignes permettent de mettre à jour les menus (information du joueur/avancement des épreuves) :
 		window.addEventListener("DOMContentLoaded", updateInformationPlayer());
 		window.addEventListener("DOMContentLoaded", updateEpreuveMenu());
+		window.addEventListener("DOMContentLoaded", updateBarreProgress());
 
 		// Fonction pour lancer le mini :
 		function miniJeu(){

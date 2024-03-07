@@ -50,6 +50,22 @@ function restartGame(reset){
 
 // -----------------------------------------------------------------------------
 
+// Fonctio pour update la barre de proression :
+function updateBarreProgress(){
+    var barreHTML = document.getElementById("progress-bar-value");
+    var barreTexte = document.getElementById("progress-pourcentage");
+    var compteur = 0;
+
+    for(var i = 0; i < tableauIdEpreuve.length; i++){
+        if(localStorage.getItem(tableauIdEpreuve[i]) == "true"){
+            compteur++;
+        }
+    }
+
+    barreHTML.style.width = compteur*20 + "%";
+    barreTexte.textContent = compteur + "/5 - " + compteur*20 + "%";
+}
+
 // -----------------------------------------------------------------------------
 
 // Fonction qui affiche/désafiche le dialogue pour quitter
