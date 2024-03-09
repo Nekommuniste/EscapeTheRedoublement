@@ -69,7 +69,7 @@ function afficherQuestion() {
     } else {
         if (score === questions.length) {
             alert(`Felicitations ! Vous avez repondu correctement a toutes les questions. Votre score est de ${score}/${questions.length}`);
-			localStorage.setItem("jeuWEB", "true");
+			localStorage.setItem("jeuWeb", "true");
 			window.location.href = "../pages/jeu.html";
         } else {
             alert(`Vous avez termine le jeu. Votre score est de ${score}/${questions.length} recommence pour un score parfait`);
