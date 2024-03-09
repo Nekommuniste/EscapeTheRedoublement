@@ -105,10 +105,10 @@ area:hover {
 	user-select: none;
 }
 
-.progress-bar-value {
+#progress-bar-value {
 	background-color: #4984b8;
 	height: 2.8vh;
-	width: 9vw;
+	width: 10%;
 	border-radius: 15px;
 	user-select: none;
 }

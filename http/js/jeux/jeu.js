@@ -50,6 +50,22 @@ function restartGame(reset){
 
 // -----------------------------------------------------------------------------
 
+// Fonctio pour update la barre de proression :
+function updateBarreProgress(){
+    var barreHTML = document.getElementById("progress-bar-value");
+    var barreTexte = document.getElementById("progress-pourcentage");
+    var compteur = 0;
+
+    for(var i = 0; i < tableauIdEpreuve.length; i++){
+        if(localStorage.getItem(tableauIdEpreuve[i]) == "true"){
+            compteur++;
+        }
+    }
+
+    barreHTML.style.width = compteur*20 + "%";
+    barreTexte.textContent = compteur + "/5 - " + compteur*20 + "%";
+}
+
 // -----------------------------------------------------------------------------
 
 // Fonction qui affiche/désafiche le dialogue pour quitter
@@ -104,4 +120,9 @@ document.addEventListener("click", function() {
         musique.play();
         musique.loop = true; // Pour que la musique se rejoue après qu'elle se soit finie
     }
+});
+
+// Test de la musique qui s'affichent dans la console
+musique.addEventListener("play", function(event) {
+    console.log("Musique en cours de lecture :", event.target);
 });

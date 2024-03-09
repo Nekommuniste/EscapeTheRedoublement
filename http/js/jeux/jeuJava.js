@@ -79,5 +79,6 @@ function verificationEpreuve() {
 function reset(){
     document.getElementById("dialogue").textContent = reset1.value;
     document.getElementById("console").value = reset2.value;
+    console.log("La fonction reset a été utilisé.")
 }
 

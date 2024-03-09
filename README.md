@@ -1,14 +1,14 @@
--------------------------------------------------------------**ESCAPE the REDOUBLEMENT**-------------------------------------------------------------
+---------------------------------------------**ESCAPE the REDOUBLEMENT**-------------------------------------------------------------
 
--------------------------------------------------------------**INTRODUCTION**-------------------------------------------------------------
+------------------------------------------**INTRODUCTION**-------------------------------------------------------------
 
 ESCAPE the REDOUBLEMENT est un jeu web du genre point and click, qui vous aménera à résoudre des épreuves (inspirées des modules de L3) afin d'obtenir sa Licence Informatique ~~(pas la vraie Licence, c'est dommage)~~.
 
-Vous pourrez vous promener dans les couloirs insipides de l'AB1 et même jouer à des mini-jeu (Incroyable non ?).
+Vous pourrez vous promener dans les couloirs de l'AB1 et même jouer à des mini-jeu (Incroyable non ?).
 
 Les épreuves sont les suivantes : Langage C, Technologie du web, Anglais, Langage Java et Graphes.
 
--------------------------------------------------------------**INSTALLATION**-------------------------------------------------------------
+----------------------------------**INSTALLATION**-------------------------------------------------------------
 
 Téléchargez le .zip du projet en allant sur <Code> puis Download ZIP :
 
@@ -25,7 +25,7 @@ Vous devriez obtenir ceci :
 
 ![image](https://github.com/Nekommuniste/EscapeTheRedoublement/assets/119844373/1cbe9895-8250-421a-a28e-4432f60a97c8)
 
-----------------------------------------------------------**GUIDE D'UTILISATION**----------------------------------------------------------
+-----------------------------------**GUIDE D'UTILISATION**-------------------------------------------------------
 
 Dans un premier temps, entrez votre nom, prénom et âge (vous pouvez les modifier en cliquant sur le bouton Changer les informations) :
 
@@ -53,27 +53,31 @@ Exemple d'épreuve (ici l'épreuve de Graphes) :
 
 ![image](https://github.com/Nekommuniste/EscapeTheRedoublement/assets/119844373/36d4ece3-e8be-485b-b52e-6b634ff2673c)
 
-*Description des épreuves à ajouter plus tard*
-
---------------------------------------------------------**INFORMATIONS TECHNIQUES**--------------------------------------------------------
+-----------------------------------**INFORMATIONS TECHNIQUES**--------------------------------------------------------
 
 Le jeu est codé à l'aide des langages HTML, CSS et JS.
 
-*MCD à ajouter plus tard car fond transparent, empêchant la lisibilité*
+Diagramme de cas d'utilisation du projet :
 
---------------------------------------------------------**INFORMATIONS SUPPLEMENTAIRES**--------------------------------------------------------
+![projet](https://github.com/Nekommuniste/EscapeTheRedoublement/assets/119844373/1b552913-c190-4139-85c8-768768e49e41)
+
+-------------------------------**INFORMATIONS SUPPLEMENTAIRES**--------------------------------------------------------
 
 ESCAPE the REDOUBLEMENT est un projet d'étudiants de L3, avec pour but d'exploiter des connaissances acquises lors du cursus de Licence Informatique.
 
 Les photos présentes dans le jeu ont été pris par les étudiants eux-même, et les sprites réalisés par eux-même également.
 
-Les sons utilisés proviennent de https://lasonotheque.org , qui est un site de sounds effects libre de droit.
+L'image du hibou provient de https://www.pngegg.com et est une image libre de droits.
+Lien amenant directement à l'image : https://www.pngegg.com/fr/png-ybzxc
+
+Les sons utilisés proviennent de https://lasonotheque.org , qui est un site de sounds effects libres de droits.
+
+La musique "Reflected Light", de SergePavkinMusic, provient de https://pixabay.com et est une musique libre de droits. 
+Lien amenant directement à la musique : https://pixabay.com/fr/music/belles-pieces-reflected-light-147979/
 
 Lien du Trello avec l'avancement du projet : https://trello.com/b/tLHZPANR/projet-l3
 
-*Retrouver la source de l'image du hibou*
-
--------------------------------------------------------------**CONTACT**-------------------------------------------------------------
+-----------------------------------------**CONTACT**-------------------------------------------------------------
 
 En cas de problèmes, veuillez contacter les membres du projet ci-dessous :
 
