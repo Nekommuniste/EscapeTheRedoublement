@@ -31,7 +31,7 @@ const questions = [
     },
 ];
 
-let score = 0; // Initialisation du score
+let score = 0; 
 let indexQuestionActuelle = 0;
 
 const boxAllQuestions = document.getElementById("boxAllQuestions");
