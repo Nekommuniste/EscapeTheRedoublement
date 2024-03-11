@@ -43,11 +43,13 @@ function replaceImage(target) {
         document.getElementById('image').src = "../img/scenes/EntreeDuBatimentFleche.jpeg";
         document.getElementById('image').useMap = "#EntreeDuBat";
         document.getElementById("dialogBoxId").textContent = tableauDialog[1];
+        localStorage.setItem("position", "deux");
         SonPas.play();
     } else if (target === 'trois') {
         document.getElementById('image').src = "../img/scenes/CouloirVuBasFleche.jpeg";
         document.getElementById('image').useMap = "#Choix";
         document.getElementById("dialogBoxId").textContent = tableauDialog[2];
+        localStorage.setItem("position", "trois");
         SonPas.play();
         SonPorte.play();
         /* Tests pour les sons de pas et de porte
@@ -61,11 +63,13 @@ function replaceImage(target) {
         document.getElementById('image').src = "../img/scenes/CouloirEtage1Fleche.jpeg";
         document.getElementById('image').useMap = "#Couloir";
         document.getElementById("dialogBoxId").textContent = tableauDialog[3];
+        localStorage.setItem("position", "quatre");
         SonPas.play();
     } else if (target == 'cinq') {
         document.getElementById('image').src = "../img/scenes/SalleFleche.jpeg";
         document.getElementById('image').useMap = "#epreuve1";
         document.getElementById("dialogBoxId").textContent = tableauDialog[12];
+        localStorage.setItem("position", "cinq");
         SonPas.play();
         SonPorte.play();
     } 
@@ -73,6 +77,7 @@ function replaceImage(target) {
         document.getElementById('image').src = "../img/scenes/Salle2Fleche.jpeg";
         document.getElementById('image').useMap = "#epreuve2";
         document.getElementById("dialogBoxId").textContent = tableauDialog[11];
+        localStorage.setItem("position", "six");
         SonPas.play();
         SonPorte.play();
     }
@@ -80,29 +85,34 @@ function replaceImage(target) {
         document.getElementById('image').src = "../img/scenes/HautDesEscaliersFleche.jpeg";
         document.getElementById('image').useMap = "#Haut";
         document.getElementById("dialogBoxId").textContent = tableauDialog[4];
+        localStorage.setItem("position", "sept");
         SonPas.play();
     }
     else if (target == 'huit') {
         document.getElementById('image').src = "../img/scenes/CouloirHautFleche.jpeg";
         document.getElementById('image').useMap = "#Etage";
         document.getElementById("dialogBoxId").textContent = tableauDialog[5];
+        localStorage.setItem("position", "huit");
         SonPas.play();
     } else if (target == 'neuf') {
         document.getElementById('image').src = "../img/scenes/CouloirHaut2Fleche.jpeg";
         document.getElementById('image').useMap = "#CouloirHaut";
         document.getElementById("dialogBoxId").textContent = tableauDialog[7];
+        localStorage.setItem("position", "neuf");
         SonPas.play();
     }
     else if (target == 'dix') {
         document.getElementById('image').src = "../img/scenes/CouloirSalle200C200G2Fleche.jpeg";
         document.getElementById('image').useMap = "#PorteTP";
         document.getElementById("dialogBoxId").textContent = tableauDialog[6];
+        localStorage.setItem("position", "dix");
         SonPas.play();
     }
     else if (target == 'onze') {
         document.getElementById('image').src = "../img/scenes/Salle3Fleche.jpeg";
         document.getElementById('image').useMap = "#Epreuve3";
         document.getElementById("dialogBoxId").textContent = tableauDialog[8];
+        localStorage.setItem("position", "onze");
         SonPas.play();
         SonPorte.play();
     }
@@ -110,6 +120,7 @@ function replaceImage(target) {
         document.getElementById('image').src = "../img/scenes/Salle5Fleche.jpeg";
         document.getElementById('image').useMap = "#Epreuve4";
         document.getElementById("dialogBoxId").textContent = tableauDialog[9];
+        localStorage.setItem("position", "douze");
         SonPas.play();
         SonPorte.play();
     }
@@ -117,6 +128,7 @@ function replaceImage(target) {
         document.getElementById('image').src = "../img/scenes/Salle200CFleche.jpeg";
         document.getElementById('image').useMap = "#epreuve5";
         document.getElementById("dialogBoxId").textContent = tableauDialog[10];
+        localStorage.setItem("position", "treize");
         SonPas.play();
         SonPorte.play();
     }

@@ -266,10 +266,14 @@
 		window.addEventListener("DOMContentLoaded", updateEpreuveMenu());
 		window.addEventListener("DOMContentLoaded", updateBarreProgress());
 
+		// Remet le joueur à la dernière position save :
+		window.addEventListener("DOMContentLoaded", savePosition());
+
 		// Fonction pour lancer le mini :
 		function miniJeu(){
 			window.location.href = "rgb.html";
 		}
+
 	// Appel de la fonction pour mettre à jour les coordonnées au chargement de la page
 	window.onload = creerZonesCliquables;
     // Appel de la fonction pour mettre à jour les coordonnées lors du redimensionnement de la fenêtre

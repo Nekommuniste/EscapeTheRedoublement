@@ -85,6 +85,12 @@ function goBack(){
 }
 // -----------------------------------------------------------------------------
 
+// Fonction pour sauvegarder la position du joueur dans le jeu :
+function savePosition(){
+    replaceImage(localStorage.getItem("position"));
+}
+
+// -----------------------------------------------------------------------------
 
 // Fonction qui mets à jour les status des boutons d'épreuves
 function buttonStatu(){
@@ -104,9 +110,7 @@ function buttonStatu(){
     }
 }
 
-
 // -----------------------------------------------------------------------------
-
 
 // Déclaration de la variable musique, qui correspond à la musique de fond.
 musique = document.createElement("audio");
