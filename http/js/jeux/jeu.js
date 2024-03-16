@@ -110,23 +110,3 @@ function buttonStatu(){
     }
 }
 
-// -----------------------------------------------------------------------------
-
-// Déclaration de la variable musique, qui correspond à la musique de fond.
-musique = document.createElement("audio");
-musique.src  = "../sons/reflected-light.mp3";
-// Volume de la musique à 25%
-musique.volume = 0.25; 
-// Fonction qui joue la musique et la répète en boucle (la musique se joue dès que le joueur clique sur quelque chose).
-document.addEventListener("click", function() {
-    // Vérifie si la musique est déjà en cours de lecture
-    if (!musique || musique.paused) {
-        musique.play();
-        musique.loop = true; // Pour que la musique se rejoue après qu'elle se soit finie
-    }
-});
-
-// Test de la musique qui s'affichent dans la console
-musique.addEventListener("play", function(event) {
-    console.log("Musique en cours de lecture :", event.target);
-});
