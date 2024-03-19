@@ -1,6 +1,6 @@
 // Créé par Esteban, modifié par Sarah le 15/02/2024 (implémentations des sons)
 var pourcentagesZones = [
-    "9.90%,50.92%,42.86%,38%",
+    "9.90%,80.92%,42.86%,58%",
     "16.45%,23.9%,61.7%,71.6%",
     "0%,77.5%,100%,100%",
     "29.63%,17%%,50.2%,56%",
@@ -134,6 +134,8 @@ function replaceImage(target) {
     }
     // Supprime l'événement onclick pour éviter la répétition
     document.getElementById('image').onclick = null;
+    veriffin();
+
 }
 function creerZonesCliquables() {
     var imageWidth = document.querySelector('.center img').offsetWidth;
@@ -153,6 +155,17 @@ function creerZonesCliquables() {
 
         areas[index].coords = coordsEnPixels.join(',');
     });
+}
+function veriffin() {
+    var anglais = localStorage.getItem("jeuAnglais");
+    var jeuC = localStorage.getItem("jeuC");
+    var jeuJava = localStorage.getItem("jeuJava");
+    var JeuGraphe = localStorage.getItem("jeuGraphe");
+    var JeuWeb = localStorage.getItem("jeuWeb");
+    if (anglais && jeuC && jeuJava && JeuGraphe && JeuWeb) {
+        console.log("Toutes les épreuves sont réussies. Redirection vers TDW.html...");
+        window.location.href = "fin.html";
+    }
 }
 
 // Appel de la fonction pour créer les zones cliquables au chargement de la page

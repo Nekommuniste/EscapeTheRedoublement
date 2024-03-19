@@ -1,0 +1,385 @@
+img {
+	user-select: none;
+	text-align: center;
+	width: 900px;
+	height: 920px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+area:hover {
+	cursor: url("../img/curseur/doigt.png"), auto;
+}
+
+.icon {
+	padding: 0;
+	margin-right: 10px;
+	height: 5vh;
+	width: 5vh;
+	user-select: none;
+}
+
+.container {
+	display: flex;
+	height: 100%;
+	user-select: none;
+}
+
+.left,
+.center,
+.right {
+	box-sizing: border-box;
+	user-select: none;
+}
+
+.left,
+.right {
+	flex: 1;
+	background-color: white;
+}
+
+.container-p {
+	padding: 0.5vh;
+	display: flex;
+	user-select: none;
+}
+
+.left-p {
+	height: 15vh;
+	flex: 0.8;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	overflow: hidden;
+	user-select: none;
+}
+
+.right-p {
+	height: 15vh;
+	flex: 1.2;
+	display: block;
+	justify-content: center;
+	align-items: center;
+	overflow: hidden;
+	user-select: none;
+	margin: auto;
+}
+
+.right-p p {
+	margin-top: 1vh;
+	user-select: none;
+}
+
+#test-status {
+	text-align: left;
+	width: 90%;
+	margin: auto;
+	margin-top: 1.5vh;
+	overflow: hidden;
+	user-select: none;
+}
+
+#test-section {
+	width: 80%;
+	min-height: 50vh;
+	overflow: hidden;
+	user-select: none;
+	margin: 2vh auto 0 auto;
+}
+
+#progress-amount {
+	color: #4984b8;
+	text-align: center;
+	overflow: hidden;
+	user-select: none;
+}
+
+.progress-bar {
+	margin: auto;
+	background-color: lightgrey;
+	height: 2.8vh;
+	width: 18vw;
+	border-radius: 15px;
+	top: 0;
+	user-select: none;
+}
+
+#progress-bar-value {
+	background-color: #4984b8;
+	height: 2.8vh;
+	width: 10%;
+	border-radius: 15px;
+	user-select: none;
+}
+
+#progress-pourcentage {
+	float: left;
+	margin-left: 6vw;
+	color: white;
+	text-align: center;
+	overflow: hidden;
+	user-select: none;
+}
+
+.img-txt {
+	margin-left: 1vh;
+	padding: 1vh 1vh 0vh 1vh;
+	display: inline-flex;
+	align-items: center;
+	user-select: none;
+}
+
+.img-txt img {
+	padding: 0;
+	margin-right: 10px;
+	height: 5vh;
+	width: 5vh;
+	user-select: none;
+}
+
+.center {
+	flex: 2.5;
+	overflow: hidden;
+	text-align: center;
+	position: relative;
+	padding-left: 15px;
+	padding-right: 15px;
+	user-select: none;
+}
+area{
+	width: 90%;
+	height: auto;
+	max-height: 90%;
+	color:red;
+}
+.center img {
+	width: 90%;
+	height: auto;
+	max-height: 90%;
+	border-bottom-right-radius: 10px;
+	border-bottom-left-radius: 10px;
+	box-shadow: 0px 0px 10px rgb(190, 190, 190);
+	user-select: none;
+}
+
+.center p {
+	position: absolute;
+	bottom: 10px;
+	width: 100%;
+	color: white;
+	font-size: 18px;
+	margin: 0;
+	user-select: none;
+}
+
+.box-left {
+	width: auto;
+	height: 100vh;
+	user-select: none;
+}
+
+.box-right {
+	width: auto;
+	height: 100vh;
+	user-select: none;
+}
+
+#right-box-title {
+	padding-top: 2vh;
+}
+
+.box-shadow {
+	box-shadow: 0px 0px 10px rgb(197, 197, 197);
+}
+
+.box-shadow-round {
+	margin: 2vh;
+	margin-top: 3vh;
+	box-shadow: 0px 0px 10px rgb(197, 197, 197);
+	border-radius: 15px;
+	user-select: none;
+}
+
+.box-shadow-round-top-left {
+	margin-top: 3vh;
+	box-shadow: 0px 0px 10px rgb(197, 197, 197);
+	border-top-left-radius: 15px;
+	user-select: none;
+}
+
+.box-shadow-round-top-right {
+	margin-top: 3vh;
+	box-shadow: 0px 0px 10px rgb(197, 197, 197);
+	border-top-right-radius: 15px;
+	user-select: none;
+}
+
+#user-icon {
+	height: 10vh;
+	width: 10vh;
+	box-shadow: 0 0 10px rgb(197, 197, 197);
+	border-radius: 15px;
+	background-color: white;
+	padding: 1vh;
+	user-select: none;
+}
+
+h2 {
+	padding: 5px;
+	text-align: center;
+}
+
+p {
+	padding: 0;
+	margin: 0;
+}
+
+.centered {
+	text-align: center;
+	margin: auto;
+	user-select: none;
+}
+
+.green-text {
+	color: green;
+}
+
+.red-text {
+	color: red;
+}
+
+h5 {
+	font-size: medium;
+}
+
+#all-test {
+	height: 30vh;
+	width: 95%;
+	max-width: 95%;
+	margin: auto;
+	overflow-y: scroll;
+	overflow-x: hidden;
+	user-select: none;
+}
+
+td {
+	padding-top: 1vh;
+	padding-bottom: 1vh;
+}
+
+#leave {
+	width: auto;
+	text-align: center;
+	display: flex;
+	background-color: red;
+	align-items: center;
+	justify-content: flex-end;
+}
+
+#leave img {
+	right: 0;
+	padding: 0;
+	height: 5vh;
+	width: 5vh;
+}
+
+#leave-box {
+	display: none;
+	position: fixed;
+    top: 35%;
+    left: 15%;
+	right: 35%;
+    width: auto;
+	height: fit-content;
+    background-color: #f1f1f1;
+    padding: 2vh;
+    box-shadow: 0 0 10px rgb(197, 197, 197);
+	border-radius: 15px;
+	z-index: 1000;
+}
+
+#exit {
+	transition: 0.5s;
+	background-color: white;
+	width: 1vw;
+	height: 1vw;
+	float: right;
+	top: 36%;
+	right: 36%;
+	position: fixed;
+	border-radius: 5px;
+	cursor: url("../img/curseur/doigt.png"), auto;
+}
+
+#remove-icon {
+	height: 1vw;
+	width: 1vw;
+}
+
+#leave-prof {
+	position: fixed;
+	float: left;
+	width: 25vh;
+	height: auto;
+}
+
+#dialog-box {
+	height: 90vh;
+	overflow-y: scroll;
+}
+
+#dialog-table,
+#dialog-box {
+	margin: auto;
+	text-align: center;
+	width: 90%;
+}
+
+#dialog-table td {
+	padding-top: 3.5vh;
+	text-align: left;
+	border-bottom: 0.5vh solid rgb(197, 197, 197);
+	border-radius: 0.5vh;
+}
+
+#test-table {
+	margin: auto;
+}
+
+#leave {
+	float: right;
+	height: auto;
+	width: 20%;
+	margin: 2vw;
+	padding: 0 0.5vw 0 1vw ;
+	user-select: none;
+	transition-duration: 1s;
+	border-radius: 15px;
+	background-color: white;
+	border: none;
+	color: black;
+	box-shadow: 0px 0px 5px rgb(197, 197, 197);
+}
+
+#leave:hover {
+	cursor: url("../img/curseur/doigt.png"), auto;
+	color: white;
+	background-color: #4984b8;
+}
+button {
+    background-color: #4984b8;
+    color: white;
+    height: auto;
+    width: auto;
+    border: 0;
+    border-radius: 15px;
+	align-items:center;
+    box-shadow: 0 0 15px grey;
+    user-select: none;
+}
+
+button:hover {
+    background-color: #2b4f6e;
+    cursor: url("../img/curseur/doigt.png"), auto;
+}
